@@ -16,5 +16,29 @@ namespace DoAnNhomQLBH
         {
             InitializeComponent();
         }
+
+        private void menuItem17_Click(object sender, EventArgs e)
+        {
+            FNhanVien fNhanVien = new FNhanVien();
+            fNhanVien.Show();
+        }
+
+        private void menuItem15_Click(object sender, EventArgs e)
+        {
+            FSanPham fSanPham = new FSanPham();
+            fSanPham.Show();
+        }
+
+        private void menuItem16_Click(object sender, EventArgs e)
+        {
+            FKhachHang fKhachHang = new FKhachHang();
+            fKhachHang.Show();
+        }
+
+        private void menuItem18_Click(object sender, EventArgs e)
+        {
+            FDonHang fDonHang = new FDonHang();
+            fDonHang.Show();
+        }
     }
 }

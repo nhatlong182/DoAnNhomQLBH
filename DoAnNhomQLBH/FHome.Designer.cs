@@ -72,7 +72,7 @@
             this.menuItem4});
             this.menuStrip1.Location = new System.Drawing.Point(0, 0);
             this.menuStrip1.Name = "menuStrip1";
-            this.menuStrip1.Size = new System.Drawing.Size(1265, 27);
+            this.menuStrip1.Size = new System.Drawing.Size(1265, 25);
             this.menuStrip1.TabIndex = 1;
             this.menuStrip1.Text = "menuStrip1";
             // 
@@ -84,25 +84,25 @@
             this.menuItemdmk});
             this.menuItem1.Font = new System.Drawing.Font("Times New Roman", 10.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.menuItem1.Name = "menuItem1";
-            this.menuItem1.Size = new System.Drawing.Size(93, 23);
+            this.menuItem1.Size = new System.Drawing.Size(82, 21);
             this.menuItem1.Text = "&Tài khoản";
             // 
             // menuItem5
             // 
             this.menuItem5.Name = "menuItem5";
-            this.menuItem5.Size = new System.Drawing.Size(187, 26);
+            this.menuItem5.Size = new System.Drawing.Size(165, 22);
             this.menuItem5.Text = "&Đăng nhập";
             // 
             // menuItem6
             // 
             this.menuItem6.Name = "menuItem6";
-            this.menuItem6.Size = new System.Drawing.Size(187, 26);
+            this.menuItem6.Size = new System.Drawing.Size(165, 22);
             this.menuItem6.Text = "&QLy tài khoản";
             // 
             // menuItemdmk
             // 
             this.menuItemdmk.Name = "menuItemdmk";
-            this.menuItemdmk.Size = new System.Drawing.Size(187, 26);
+            this.menuItemdmk.Size = new System.Drawing.Size(165, 22);
             this.menuItemdmk.Text = "&Đổi mật khẩu";
             // 
             // menuItem2
@@ -114,31 +114,31 @@
             this.menuItem10});
             this.menuItem2.Font = new System.Drawing.Font("Times New Roman", 10.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.menuItem2.Name = "menuItem2";
-            this.menuItem2.Size = new System.Drawing.Size(94, 23);
+            this.menuItem2.Size = new System.Drawing.Size(83, 21);
             this.menuItem2.Text = "&Danh mục";
             // 
             // menuItem7
             // 
             this.menuItem7.Name = "menuItem7";
-            this.menuItem7.Size = new System.Drawing.Size(214, 26);
+            this.menuItem7.Size = new System.Drawing.Size(187, 22);
             this.menuItem7.Text = "&Nhân sự";
             // 
             // menuItem8
             // 
             this.menuItem8.Name = "menuItem8";
-            this.menuItem8.Size = new System.Drawing.Size(214, 26);
+            this.menuItem8.Size = new System.Drawing.Size(187, 22);
             this.menuItem8.Text = "&Thông tin cá nhân";
             // 
             // menuItem9
             // 
             this.menuItem9.Name = "menuItem9";
-            this.menuItem9.Size = new System.Drawing.Size(214, 26);
+            this.menuItem9.Size = new System.Drawing.Size(187, 22);
             this.menuItem9.Text = "&Chế độ";
             // 
             // menuItem10
             // 
             this.menuItem10.Name = "menuItem10";
-            this.menuItem10.Size = new System.Drawing.Size(214, 26);
+            this.menuItem10.Size = new System.Drawing.Size(187, 22);
             this.menuItem10.Text = "&Hồ sơ thử việc";
             // 
             // menuItem3
@@ -147,13 +147,13 @@
             this.menuItem11});
             this.menuItem3.Font = new System.Drawing.Font("Times New Roman", 10.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.menuItem3.Name = "menuItem3";
-            this.menuItem3.Size = new System.Drawing.Size(103, 23);
+            this.menuItem3.Size = new System.Drawing.Size(90, 21);
             this.menuItem3.Text = "&Chức năng ";
             // 
             // menuItem11
             // 
             this.menuItem11.Name = "menuItem11";
-            this.menuItem11.Size = new System.Drawing.Size(144, 26);
+            this.menuItem11.Size = new System.Drawing.Size(126, 22);
             this.menuItem11.Text = "&Tra cứu ";
             // 
             // menuItem4
@@ -165,36 +165,40 @@
             this.menuItem18});
             this.menuItem4.Font = new System.Drawing.Font("Times New Roman", 10.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.menuItem4.Name = "menuItem4";
-            this.menuItem4.Size = new System.Drawing.Size(78, 23);
+            this.menuItem4.Size = new System.Drawing.Size(69, 21);
             this.menuItem4.Text = "&Quản lý";
             // 
             // menuItem15
             // 
             this.menuItem15.Name = "menuItem15";
-            this.menuItem15.Size = new System.Drawing.Size(206, 26);
-            this.menuItem15.Text = "&Phòng ban";
+            this.menuItem15.Size = new System.Drawing.Size(152, 22);
+            this.menuItem15.Text = "Sản phẩm";
+            this.menuItem15.Click += new System.EventHandler(this.menuItem15_Click);
             // 
             // menuItem16
             // 
             this.menuItem16.Name = "menuItem16";
-            this.menuItem16.Size = new System.Drawing.Size(206, 26);
-            this.menuItem16.Text = "&Bộ phân";
+            this.menuItem16.Size = new System.Drawing.Size(152, 22);
+            this.menuItem16.Text = "Khách hàng";
+            this.menuItem16.Click += new System.EventHandler(this.menuItem16_Click);
             // 
             // menuItem17
             // 
             this.menuItem17.Name = "menuItem17";
-            this.menuItem17.Size = new System.Drawing.Size(206, 26);
-            this.menuItem17.Text = "&Lương nhân viên";
+            this.menuItem17.Size = new System.Drawing.Size(152, 22);
+            this.menuItem17.Text = "Nhân viên";
+            this.menuItem17.Click += new System.EventHandler(this.menuItem17_Click);
             // 
             // menuItem18
             // 
             this.menuItem18.Name = "menuItem18";
-            this.menuItem18.Size = new System.Drawing.Size(206, 26);
-            this.menuItem18.Text = "&Bảng lương";
+            this.menuItem18.Size = new System.Drawing.Size(152, 22);
+            this.menuItem18.Text = "Đơn hàng";
+            this.menuItem18.Click += new System.EventHandler(this.menuItem18_Click);
             // 
             // FHome
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(11F, 20F);
+            this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 17F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.SystemColors.Window;
             this.ClientSize = new System.Drawing.Size(1265, 654);
