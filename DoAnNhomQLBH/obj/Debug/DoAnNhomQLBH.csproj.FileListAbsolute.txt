@@ -1,1 +1,15 @@
 D:\project\DoAnNhomQLBH\DoAnNhomQLBH\bin\Debug\DoAnNhomQLBH.exe.config
+C:\Users\pc\Desktop\DoAnNhomQLBH\DoAnNhomQLBH\bin\Debug\DoAnNhomQLBH.exe.config
+C:\Users\pc\Desktop\DoAnNhomQLBH\DoAnNhomQLBH\bin\Debug\DoAnNhomQLBH.exe
+C:\Users\pc\Desktop\DoAnNhomQLBH\DoAnNhomQLBH\bin\Debug\DoAnNhomQLBH.pdb
+C:\Users\pc\Desktop\DoAnNhomQLBH\DoAnNhomQLBH\bin\Debug\EntityFramework.dll
+C:\Users\pc\Desktop\DoAnNhomQLBH\DoAnNhomQLBH\bin\Debug\EntityFramework.SqlServer.dll
+C:\Users\pc\Desktop\DoAnNhomQLBH\DoAnNhomQLBH\bin\Debug\EntityFramework.xml
+C:\Users\pc\Desktop\DoAnNhomQLBH\DoAnNhomQLBH\bin\Debug\EntityFramework.SqlServer.xml
+C:\Users\pc\Desktop\DoAnNhomQLBH\DoAnNhomQLBH\obj\Debug\DoAnNhomQLBH.FormDangNhap.resources
+C:\Users\pc\Desktop\DoAnNhomQLBH\DoAnNhomQLBH\obj\Debug\DoAnNhomQLBH.Properties.Resources.resources
+C:\Users\pc\Desktop\DoAnNhomQLBH\DoAnNhomQLBH\obj\Debug\DoAnNhomQLBH.csproj.GenerateResource.Cache
+C:\Users\pc\Desktop\DoAnNhomQLBH\DoAnNhomQLBH\obj\Debug\DoAnNhomQLBH.exe
+C:\Users\pc\Desktop\DoAnNhomQLBH\DoAnNhomQLBH\obj\Debug\DoAnNhomQLBH.pdb
+C:\Users\pc\Desktop\DoAnNhomQLBH\DoAnNhomQLBH\obj\Debug\DoAnNhomQLBH.FKhachHang.resources
+C:\Users\pc\Desktop\DoAnNhomQLBH\DoAnNhomQLBH\obj\Debug\DoAnNhomQLBH.csprojResolveAssemblyReference.cache
