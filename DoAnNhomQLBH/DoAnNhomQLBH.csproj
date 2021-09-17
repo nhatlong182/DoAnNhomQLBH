@@ -57,6 +57,12 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="CTDH.cs">
+      <DependentUpon>QLBanHangEF.tt</DependentUpon>
+    </Compile>
+    <Compile Include="DonHang.cs">
+      <DependentUpon>QLBanHangEF.tt</DependentUpon>
+    </Compile>
     <Compile Include="FChiTietDonHang.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -105,8 +111,38 @@
     <Compile Include="FSanPham.Designer.cs">
       <DependentUpon>FSanPham.cs</DependentUpon>
     </Compile>
+    <Compile Include="KhachHang.cs">
+      <DependentUpon>QLBanHangEF.tt</DependentUpon>
+    </Compile>
+    <Compile Include="LoaiSP.cs">
+      <DependentUpon>QLBanHangEF.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Nhanvien.cs">
+      <DependentUpon>QLBanHangEF.tt</DependentUpon>
+    </Compile>
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="QLBanHangEF.Context.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>QLBanHangEF.Context.tt</DependentUpon>
+    </Compile>
+    <Compile Include="QLBanHangEF.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>QLBanHangEF.tt</DependentUpon>
+    </Compile>
+    <Compile Include="QLBanHangEF.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>QLBanHangEF.edmx</DependentUpon>
+    </Compile>
+    <Compile Include="SanPham.cs">
+      <DependentUpon>QLBanHangEF.tt</DependentUpon>
+    </Compile>
+    <Compile Include="sysdiagram.cs">
+      <DependentUpon>QLBanHangEF.tt</DependentUpon>
+    </Compile>
     <EmbeddedResource Include="FChiTietDonHang.resx">
       <DependentUpon>FChiTietDonHang.cs</DependentUpon>
     </EmbeddedResource>
@@ -156,6 +192,13 @@
     <None Include="App.config" />
   </ItemGroup>
   <ItemGroup>
+    <EntityDeploy Include="QLBanHangEF.edmx">
+      <Generator>EntityModelCodeGenerator</Generator>
+      <LastGenOutput>QLBanHangEF.Designer.cs</LastGenOutput>
+    </EntityDeploy>
+    <None Include="QLBanHangEF.edmx.diagram">
+      <DependentUpon>QLBanHangEF.edmx</DependentUpon>
+    </None>
     <None Include="Resources\avtnam.png" />
   </ItemGroup>
   <ItemGroup>
@@ -164,6 +207,18 @@
   <ItemGroup>
     <Folder Include="BUS\" />
     <Folder Include="DAO\" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="QLBanHangEF.Context.tt">
+      <Generator>TextTemplatingFileGenerator</Generator>
+      <DependentUpon>QLBanHangEF.edmx</DependentUpon>
+      <LastGenOutput>QLBanHangEF.Context.cs</LastGenOutput>
+    </Content>
+    <Content Include="QLBanHangEF.tt">
+      <Generator>TextTemplatingFileGenerator</Generator>
+      <DependentUpon>QLBanHangEF.edmx</DependentUpon>
+      <LastGenOutput>QLBanHangEF.cs</LastGenOutput>
+    </Content>
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
