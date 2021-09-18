@@ -21,6 +21,7 @@ namespace DoAnNhomQLBH
         public Nullable<int> ThanhTien { get; set; }
         public Nullable<int> Giamgia { get; set; }
     
+        public virtual DonHang DonHang { get; set; }
         public virtual SanPham SanPham { get; set; }
     }
 }

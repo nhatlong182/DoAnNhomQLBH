@@ -33,3 +33,9 @@ C:\Users\Admin\Desktop\New folder\DoAnNhomQLBH\DoAnNhomQLBH\obj\Debug\DoAnNhomQL
 C:\Users\Admin\Desktop\New folder\DoAnNhomQLBH\DoAnNhomQLBH\obj\Debug\DoAnNhomQLBH.FSanPham.resources
 C:\Users\Admin\Desktop\New folder\DoAnNhomQLBH\DoAnNhomQLBH\obj\Debug\DoAnNhomQLBH.Properties.Resources.resources
 C:\Users\Admin\Desktop\New folder\DoAnNhomQLBH\DoAnNhomQLBH\obj\Debug\DoAnNhomQLBH.csproj.GenerateResource.Cache
+C:\Users\pc\Desktop\DoAnNhomQLBH\DoAnNhomQLBH\obj\Debug\DoAnNhomQLBH.FChiTietDonHang.resources
+C:\Users\pc\Desktop\DoAnNhomQLBH\DoAnNhomQLBH\obj\Debug\DoAnNhomQLBH.FDonHang.resources
+C:\Users\pc\Desktop\DoAnNhomQLBH\DoAnNhomQLBH\obj\Debug\DoAnNhomQLBH.FHome.resources
+C:\Users\pc\Desktop\DoAnNhomQLBH\DoAnNhomQLBH\obj\Debug\DoAnNhomQLBH.FHomeAdmin.resources
+C:\Users\pc\Desktop\DoAnNhomQLBH\DoAnNhomQLBH\obj\Debug\DoAnNhomQLBH.FNhanVien.resources
+C:\Users\pc\Desktop\DoAnNhomQLBH\DoAnNhomQLBH\obj\Debug\DoAnNhomQLBH.FSanPham.resources
