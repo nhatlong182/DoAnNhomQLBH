@@ -57,10 +57,12 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="BUS\BUS_DangNhap.cs" />
     <Compile Include="BUS\BUS_KhachHang.cs" />
     <Compile Include="CTDH.cs">
       <DependentUpon>QLBanHangEF.tt</DependentUpon>
     </Compile>
+    <Compile Include="DAO\DAO_DangNhap.cs" />
     <Compile Include="DAO\DAO_KhachHang.cs" />
     <Compile Include="DonHang.cs">
       <DependentUpon>QLBanHangEF.tt</DependentUpon>

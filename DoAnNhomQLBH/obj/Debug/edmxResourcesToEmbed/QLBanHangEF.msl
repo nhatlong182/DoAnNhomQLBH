@@ -90,5 +90,6 @@
         </MappingFragment>
       </EntityTypeMapping>
     </EntitySetMapping>
+    <FunctionImportMapping FunctionImportName="spLogin" FunctionName="quanlybanhangModel.Store.spLogin" />
   </EntityContainerMapping>
 </Mapping>
