@@ -4,17 +4,18 @@
   <edmx:Designer xmlns="http://schemas.microsoft.com/ado/2009/11/edmx">
     <!-- Diagram content (shape and connector positions) -->
     <edmx:Diagrams>
-      <Diagram DiagramId="a9e7b4546d71413e916d93b981db52fd" Name="Diagram1">
-        <EntityTypeShape EntityType="quanlybanhangModel.CTDH" Width="1.5" PointX="5" PointY="5.125" IsExpanded="true" />
+      <Diagram DiagramId="05a93e4f778147169a49f597ef3855f6" Name="Diagram1">
+        <EntityTypeShape EntityType="quanlybanhangModel.CTDH" Width="1.5" PointX="3.5" PointY="5.125" IsExpanded="true" />
         <EntityTypeShape EntityType="quanlybanhangModel.DonHang" Width="1.5" PointX="3" PointY="1.125" IsExpanded="true" />
         <EntityTypeShape EntityType="quanlybanhangModel.KhachHang" Width="1.5" PointX="0.75" PointY="1" IsExpanded="true" />
         <EntityTypeShape EntityType="quanlybanhangModel.LoaiSP" Width="1.5" PointX="5.75" PointY="0.75" IsExpanded="true" />
         <EntityTypeShape EntityType="quanlybanhangModel.Nhanvien" Width="1.5" PointX="0.75" PointY="5" IsExpanded="true" />
-        <EntityTypeShape EntityType="quanlybanhangModel.SanPham" Width="1.5" PointX="2.75" PointY="5" IsExpanded="true" />
-        <EntityTypeShape EntityType="quanlybanhangModel.sysdiagram" Width="1.5" PointX="7.75" PointY="0.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="quanlybanhangModel.SanPham" Width="1.5" PointX="5.5" PointY="3" IsExpanded="true" />
         <AssociationConnector Association="quanlybanhangModel.FK_CTDH_SanPham" ManuallyRouted="false" />
         <AssociationConnector Association="quanlybanhangModel.FK_DonHang_KhachHang" ManuallyRouted="false" />
         <AssociationConnector Association="quanlybanhangModel.FK_DonHang_Nhanvien" ManuallyRouted="false" />
+        <EntityTypeShape EntityType="quanlybanhangModel.sysdiagram" Width="1.5" PointX="6.375" PointY="6.75" />
+        <AssociationConnector Association="quanlybanhangModel.FK_SanPham_LoaiSP" />
       </Diagram>
     </edmx:Diagrams>
   </edmx:Designer>

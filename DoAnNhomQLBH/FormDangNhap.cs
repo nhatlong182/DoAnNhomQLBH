@@ -21,5 +21,10 @@ namespace DoAnNhomQLBH
         {
             Application.Exit();
         }
+
+        private void bntDangNhap_Click(object sender, EventArgs e)
+        {
+
+        }
     }
 }

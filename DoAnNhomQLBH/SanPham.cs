@@ -31,5 +31,6 @@ namespace DoAnNhomQLBH
     
         [System.Diagnostics.CodeAnalysis.SuppressMessage("Microsoft.Usage", "CA2227:CollectionPropertiesShouldBeReadOnly")]
         public virtual ICollection<CTDH> CTDHs { get; set; }
+        public virtual LoaiSP LoaiSP { get; set; }
     }
 }

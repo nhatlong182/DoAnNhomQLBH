@@ -33,3 +33,23 @@ C:\Users\Admin\Desktop\New folder\DoAnNhomQLBH\DoAnNhomQLBH\obj\Debug\DoAnNhomQL
 C:\Users\Admin\Desktop\New folder\DoAnNhomQLBH\DoAnNhomQLBH\obj\Debug\DoAnNhomQLBH.FSanPham.resources
 C:\Users\Admin\Desktop\New folder\DoAnNhomQLBH\DoAnNhomQLBH\obj\Debug\DoAnNhomQLBH.Properties.Resources.resources
 C:\Users\Admin\Desktop\New folder\DoAnNhomQLBH\DoAnNhomQLBH\obj\Debug\DoAnNhomQLBH.csproj.GenerateResource.Cache
+D:\LapTrinhCoSoDuLieu\DoAnNhom\DoAnNhomQLBH\DoAnNhomQLBH\bin\Debug\DoAnNhomQLBH.exe.config
+D:\LapTrinhCoSoDuLieu\DoAnNhom\DoAnNhomQLBH\DoAnNhomQLBH\obj\Debug\DoAnNhomQLBH.exe
+D:\LapTrinhCoSoDuLieu\DoAnNhom\DoAnNhomQLBH\DoAnNhomQLBH\obj\Debug\DoAnNhomQLBH.pdb
+D:\LapTrinhCoSoDuLieu\DoAnNhom\DoAnNhomQLBH\DoAnNhomQLBH\bin\Debug\DoAnNhomQLBH.exe
+D:\LapTrinhCoSoDuLieu\DoAnNhom\DoAnNhomQLBH\DoAnNhomQLBH\bin\Debug\DoAnNhomQLBH.pdb
+D:\LapTrinhCoSoDuLieu\DoAnNhom\DoAnNhomQLBH\DoAnNhomQLBH\bin\Debug\EntityFramework.dll
+D:\LapTrinhCoSoDuLieu\DoAnNhom\DoAnNhomQLBH\DoAnNhomQLBH\bin\Debug\EntityFramework.SqlServer.dll
+D:\LapTrinhCoSoDuLieu\DoAnNhom\DoAnNhomQLBH\DoAnNhomQLBH\bin\Debug\EntityFramework.xml
+D:\LapTrinhCoSoDuLieu\DoAnNhom\DoAnNhomQLBH\DoAnNhomQLBH\bin\Debug\EntityFramework.SqlServer.xml
+D:\LapTrinhCoSoDuLieu\DoAnNhom\DoAnNhomQLBH\DoAnNhomQLBH\obj\Debug\DoAnNhomQLBH.FChiTietDonHang.resources
+D:\LapTrinhCoSoDuLieu\DoAnNhom\DoAnNhomQLBH\DoAnNhomQLBH\obj\Debug\DoAnNhomQLBH.FDonHang.resources
+D:\LapTrinhCoSoDuLieu\DoAnNhom\DoAnNhomQLBH\DoAnNhomQLBH\obj\Debug\DoAnNhomQLBH.FHome.resources
+D:\LapTrinhCoSoDuLieu\DoAnNhom\DoAnNhomQLBH\DoAnNhomQLBH\obj\Debug\DoAnNhomQLBH.FHomeAdmin.resources
+D:\LapTrinhCoSoDuLieu\DoAnNhom\DoAnNhomQLBH\DoAnNhomQLBH\obj\Debug\DoAnNhomQLBH.FKhachHang.resources
+D:\LapTrinhCoSoDuLieu\DoAnNhom\DoAnNhomQLBH\DoAnNhomQLBH\obj\Debug\DoAnNhomQLBH.FNhanVien.resources
+D:\LapTrinhCoSoDuLieu\DoAnNhom\DoAnNhomQLBH\DoAnNhomQLBH\obj\Debug\DoAnNhomQLBH.FormDangNhap.resources
+D:\LapTrinhCoSoDuLieu\DoAnNhom\DoAnNhomQLBH\DoAnNhomQLBH\obj\Debug\DoAnNhomQLBH.FSanPham.resources
+D:\LapTrinhCoSoDuLieu\DoAnNhom\DoAnNhomQLBH\DoAnNhomQLBH\obj\Debug\DoAnNhomQLBH.Properties.Resources.resources
+D:\LapTrinhCoSoDuLieu\DoAnNhom\DoAnNhomQLBH\DoAnNhomQLBH\obj\Debug\DoAnNhomQLBH.csproj.GenerateResource.Cache
+D:\LapTrinhCoSoDuLieu\DoAnNhom\DoAnNhomQLBH\DoAnNhomQLBH\obj\Debug\DoAnNhomQLBH.csprojResolveAssemblyReference.cache
