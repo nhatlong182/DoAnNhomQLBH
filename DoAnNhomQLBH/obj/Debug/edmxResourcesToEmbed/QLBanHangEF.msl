@@ -32,12 +32,12 @@
           <ScalarProperty Name="MaKH" ColumnName="MaKH" />
           <ScalarProperty Name="TenKH" ColumnName="TenKH" />
           <ScalarProperty Name="DiaChi" ColumnName="DiaChi" />
+          <ScalarProperty Name="NgaySinh" ColumnName="NgaySinh" />
           <ScalarProperty Name="GioiTinh" ColumnName="GioiTinh" />
           <ScalarProperty Name="DienThoai" ColumnName="DienThoai" />
           <ScalarProperty Name="Fax" ColumnName="Fax" />
           <ScalarProperty Name="Email" ColumnName="Email" />
           <ScalarProperty Name="Password" ColumnName="Password" />
-          <ScalarProperty Name="NgaySinh" ColumnName="NgaySinh" />
         </MappingFragment>
       </EntityTypeMapping>
     </EntitySetMapping>
@@ -75,6 +75,7 @@
           <ScalarProperty Name="DangGiamGia" ColumnName="DangGiamGia" />
           <ScalarProperty Name="MaGiamGia" ColumnName="MaGiamGia" />
           <ScalarProperty Name="SoLuong" ColumnName="SoLuong" />
+          <ScalarProperty Name="GhiChu" ColumnName="GhiChu" />
         </MappingFragment>
       </EntityTypeMapping>
     </EntitySetMapping>
@@ -89,5 +90,6 @@
         </MappingFragment>
       </EntityTypeMapping>
     </EntitySetMapping>
+    <FunctionImportMapping FunctionImportName="spLogin" FunctionName="quanlybanhangModel.Store.spLogin" />
   </EntityContainerMapping>
 </Mapping>

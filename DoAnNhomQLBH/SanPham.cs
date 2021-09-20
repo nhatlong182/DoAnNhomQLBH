@@ -28,6 +28,7 @@ namespace DoAnNhomQLBH
         public Nullable<bool> DangGiamGia { get; set; }
         public Nullable<int> MaGiamGia { get; set; }
         public Nullable<int> SoLuong { get; set; }
+        public string GhiChu { get; set; }
     
         [System.Diagnostics.CodeAnalysis.SuppressMessage("Microsoft.Usage", "CA2227:CollectionPropertiesShouldBeReadOnly")]
         public virtual ICollection<CTDH> CTDHs { get; set; }

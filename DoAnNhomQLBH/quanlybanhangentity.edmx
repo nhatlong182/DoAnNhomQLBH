@@ -36,12 +36,12 @@
           <Property Name="MaKH" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
           <Property Name="TenKH" Type="nvarchar" MaxLength="30" />
           <Property Name="DiaChi" Type="nvarchar" MaxLength="30" />
+          <Property Name="NgaySinh" Type="date" />
           <Property Name="GioiTinh" Type="nvarchar" MaxLength="10" />
           <Property Name="DienThoai" Type="nvarchar" MaxLength="7" />
           <Property Name="Fax" Type="nvarchar" MaxLength="12" />
           <Property Name="Email" Type="nvarchar" MaxLength="50" />
           <Property Name="Password" Type="nvarchar" MaxLength="50" />
-          <Property Name="NgaySinh" Type="date" />
         </EntityType>
         <EntityType Name="LoaiSP">
           <Key>
@@ -76,6 +76,7 @@
           <Property Name="DangGiamGia" Type="bit" />
           <Property Name="MaGiamGia" Type="int" />
           <Property Name="SoLuong" Type="int" />
+          <Property Name="GhiChu" Type="nvarchar" MaxLength="50" />
         </EntityType>
         <EntityType Name="sysdiagrams">
           <Key>
@@ -87,6 +88,18 @@
           <Property Name="version" Type="int" />
           <Property Name="definition" Type="varbinary(max)" />
         </EntityType>
+        <Association Name="FK_CTDH_DonHang">
+          <End Role="DonHang" Type="Self.DonHang" Multiplicity="1" />
+          <End Role="CTDH" Type="Self.CTDH" Multiplicity="*" />
+          <ReferentialConstraint>
+            <Principal Role="DonHang">
+              <PropertyRef Name="MaDH" />
+            </Principal>
+            <Dependent Role="CTDH">
+              <PropertyRef Name="MaDH" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
         <Association Name="FK_CTDH_SanPham">
           <End Role="SanPham" Type="Self.SanPham" Multiplicity="1" />
           <End Role="CTDH" Type="Self.CTDH" Multiplicity="*" />
@@ -135,6 +148,10 @@
             </Dependent>
           </ReferentialConstraint>
         </Association>
+        <Function Name="spLogin" Aggregate="false" BuiltIn="false" NiladicFunction="false" IsComposable="false" ParameterTypeSemantics="AllowImplicitConversion" Schema="dbo">
+          <Parameter Name="Email" Type="nvarchar" Mode="In" />
+          <Parameter Name="Password" Type="nvarchar" Mode="In" />
+        </Function>
         <EntityContainer Name="quanlybanhangModelStoreContainer">
           <EntitySet Name="CTDH" EntityType="Self.CTDH" Schema="dbo" store:Type="Tables" />
           <EntitySet Name="DonHang" EntityType="Self.DonHang" Schema="dbo" store:Type="Tables" />
@@ -143,6 +160,10 @@
           <EntitySet Name="Nhanvien" EntityType="Self.Nhanvien" Schema="dbo" store:Type="Tables" />
           <EntitySet Name="SanPham" EntityType="Self.SanPham" Schema="dbo" store:Type="Tables" />
           <EntitySet Name="sysdiagrams" EntityType="Self.sysdiagrams" Schema="dbo" store:Type="Tables" />
+          <AssociationSet Name="FK_CTDH_DonHang" Association="Self.FK_CTDH_DonHang">
+            <End Role="DonHang" EntitySet="DonHang" />
+            <End Role="CTDH" EntitySet="CTDH" />
+          </AssociationSet>
           <AssociationSet Name="FK_CTDH_SanPham" Association="Self.FK_CTDH_SanPham">
             <End Role="SanPham" EntitySet="SanPham" />
             <End Role="CTDH" EntitySet="CTDH" />
@@ -175,6 +196,7 @@
           <Property Name="Size" Type="String" MaxLength="10" FixedLength="true" Unicode="true" />
           <Property Name="ThanhTien" Type="Int32" />
           <Property Name="Giamgia" Type="Int32" />
+          <NavigationProperty Name="DonHang" Relationship="Self.FK_CTDH_DonHang" FromRole="CTDH" ToRole="DonHang" />
           <NavigationProperty Name="SanPham" Relationship="Self.FK_CTDH_SanPham" FromRole="CTDH" ToRole="SanPham" />
         </EntityType>
         <EntityType Name="DonHang">
@@ -188,6 +210,7 @@
           <Property Name="NgayGiaoHang" Type="DateTime" Precision="3" />
           <Property Name="DiaChiGiaoHang" Type="String" MaxLength="50" FixedLength="true" Unicode="true" />
           <Property Name="GhiChu" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
+          <NavigationProperty Name="CTDHs" Relationship="Self.FK_CTDH_DonHang" FromRole="DonHang" ToRole="CTDH" />
           <NavigationProperty Name="KhachHang" Relationship="Self.FK_DonHang_KhachHang" FromRole="DonHang" ToRole="KhachHang" />
           <NavigationProperty Name="Nhanvien" Relationship="Self.FK_DonHang_Nhanvien" FromRole="DonHang" ToRole="Nhanvien" />
         </EntityType>
@@ -198,12 +221,12 @@
           <Property Name="MaKH" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
           <Property Name="TenKH" Type="String" MaxLength="30" FixedLength="false" Unicode="true" />
           <Property Name="DiaChi" Type="String" MaxLength="30" FixedLength="false" Unicode="true" />
+          <Property Name="NgaySinh" Type="DateTime" Precision="0" />
           <Property Name="GioiTinh" Type="String" MaxLength="10" FixedLength="false" Unicode="true" />
           <Property Name="DienThoai" Type="String" MaxLength="7" FixedLength="false" Unicode="true" />
           <Property Name="Fax" Type="String" MaxLength="12" FixedLength="false" Unicode="true" />
           <Property Name="Email" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
           <Property Name="Password" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
-          <Property Name="NgaySinh" Type="DateTime" Precision="0" />
           <NavigationProperty Name="DonHangs" Relationship="Self.FK_DonHang_KhachHang" FromRole="KhachHang" ToRole="DonHang" />
         </EntityType>
         <EntityType Name="LoaiSP">
@@ -212,7 +235,7 @@
           </Key>
           <Property Name="MaLoaiSP" Type="Int32" Nullable="false" />
           <Property Name="TenLoaiSP" Type="String" MaxLength="255" FixedLength="false" Unicode="true" />
-          <NavigationProperty Name="SanPhams" Relationship="quanlybanhangModel.FK_SanPham_LoaiSP" FromRole="LoaiSP" ToRole="SanPham" />
+          <NavigationProperty Name="SanPhams" Relationship="Self.FK_SanPham_LoaiSP" FromRole="LoaiSP" ToRole="SanPham" />
         </EntityType>
         <EntityType Name="Nhanvien">
           <Key>
@@ -241,9 +264,32 @@
           <Property Name="DangGiamGia" Type="Boolean" />
           <Property Name="MaGiamGia" Type="Int32" />
           <Property Name="SoLuong" Type="Int32" />
+          <Property Name="GhiChu" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
           <NavigationProperty Name="CTDHs" Relationship="Self.FK_CTDH_SanPham" FromRole="SanPham" ToRole="CTDH" />
-          <NavigationProperty Name="LoaiSP" Relationship="quanlybanhangModel.FK_SanPham_LoaiSP" FromRole="SanPham" ToRole="LoaiSP" />
+          <NavigationProperty Name="LoaiSP" Relationship="Self.FK_SanPham_LoaiSP" FromRole="SanPham" ToRole="LoaiSP" />
         </EntityType>
+        <EntityType Name="sysdiagram">
+          <Key>
+            <PropertyRef Name="diagram_id" />
+          </Key>
+          <Property Name="name" Type="String" MaxLength="128" FixedLength="false" Unicode="true" Nullable="false" />
+          <Property Name="principal_id" Type="Int32" Nullable="false" />
+          <Property Name="diagram_id" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+          <Property Name="version" Type="Int32" />
+          <Property Name="definition" Type="Binary" MaxLength="Max" FixedLength="false" />
+        </EntityType>
+        <Association Name="FK_CTDH_DonHang">
+          <End Role="DonHang" Type="Self.DonHang" Multiplicity="1" />
+          <End Role="CTDH" Type="Self.CTDH" Multiplicity="*" />
+          <ReferentialConstraint>
+            <Principal Role="DonHang">
+              <PropertyRef Name="MaDH" />
+            </Principal>
+            <Dependent Role="CTDH">
+              <PropertyRef Name="MaDH" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
         <Association Name="FK_CTDH_SanPham">
           <End Role="SanPham" Type="Self.SanPham" Multiplicity="1" />
           <End Role="CTDH" Type="Self.CTDH" Multiplicity="*" />
@@ -280,6 +326,18 @@
             </Dependent>
           </ReferentialConstraint>
         </Association>
+        <Association Name="FK_SanPham_LoaiSP">
+          <End Role="LoaiSP" Type="Self.LoaiSP" Multiplicity="0..1" />
+          <End Role="SanPham" Type="Self.SanPham" Multiplicity="*" />
+          <ReferentialConstraint>
+            <Principal Role="LoaiSP">
+              <PropertyRef Name="MaLoaiSP" />
+            </Principal>
+            <Dependent Role="SanPham">
+              <PropertyRef Name="MaLoaiSP" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
         <EntityContainer Name="quanlybanhangEntities" annotation:LazyLoadingEnabled="true">
           <EntitySet Name="CTDHs" EntityType="Self.CTDH" />
           <EntitySet Name="DonHangs" EntityType="Self.DonHang" />
@@ -287,6 +345,11 @@
           <EntitySet Name="LoaiSPs" EntityType="Self.LoaiSP" />
           <EntitySet Name="Nhanviens" EntityType="Self.Nhanvien" />
           <EntitySet Name="SanPhams" EntityType="Self.SanPham" />
+          <EntitySet Name="sysdiagrams" EntityType="Self.sysdiagram" />
+          <AssociationSet Name="FK_CTDH_DonHang" Association="Self.FK_CTDH_DonHang">
+            <End Role="DonHang" EntitySet="DonHangs" />
+            <End Role="CTDH" EntitySet="CTDHs" />
+          </AssociationSet>
           <AssociationSet Name="FK_CTDH_SanPham" Association="Self.FK_CTDH_SanPham">
             <End Role="SanPham" EntitySet="SanPhams" />
             <End Role="CTDH" EntitySet="CTDHs" />
@@ -299,11 +362,14 @@
             <End Role="Nhanvien" EntitySet="Nhanviens" />
             <End Role="DonHang" EntitySet="DonHangs" />
           </AssociationSet>
-          <EntitySet Name="sysdiagrams" EntityType="quanlybanhangModel.sysdiagram" />
-          <AssociationSet Name="FK_SanPham_LoaiSP" Association="quanlybanhangModel.FK_SanPham_LoaiSP">
+          <AssociationSet Name="FK_SanPham_LoaiSP" Association="Self.FK_SanPham_LoaiSP">
             <End Role="LoaiSP" EntitySet="LoaiSPs" />
             <End Role="SanPham" EntitySet="SanPhams" />
           </AssociationSet>
+          <FunctionImport Name="spLogin" ReturnType="Collection(Int32)">
+            <Parameter Name="Email" Mode="In" Type="String" />
+            <Parameter Name="Password" Mode="In" Type="String" />
+          </FunctionImport>
         </EntityContainer>
         <EntityType Name="sysdiagram">
           <Key>
@@ -364,12 +430,12 @@
                 <ScalarProperty Name="MaKH" ColumnName="MaKH" />
                 <ScalarProperty Name="TenKH" ColumnName="TenKH" />
                 <ScalarProperty Name="DiaChi" ColumnName="DiaChi" />
+                <ScalarProperty Name="NgaySinh" ColumnName="NgaySinh" />
                 <ScalarProperty Name="GioiTinh" ColumnName="GioiTinh" />
                 <ScalarProperty Name="DienThoai" ColumnName="DienThoai" />
                 <ScalarProperty Name="Fax" ColumnName="Fax" />
                 <ScalarProperty Name="Email" ColumnName="Email" />
                 <ScalarProperty Name="Password" ColumnName="Password" />
-                <ScalarProperty Name="NgaySinh" ColumnName="NgaySinh" />
               </MappingFragment>
             </EntityTypeMapping>
           </EntitySetMapping>
@@ -407,6 +473,7 @@
                 <ScalarProperty Name="DangGiamGia" ColumnName="DangGiamGia" />
                 <ScalarProperty Name="MaGiamGia" ColumnName="MaGiamGia" />
                 <ScalarProperty Name="SoLuong" ColumnName="SoLuong" />
+                <ScalarProperty Name="GhiChu" ColumnName="GhiChu" />
               </MappingFragment>
             </EntityTypeMapping>
           </EntitySetMapping>
@@ -421,6 +488,7 @@
               </MappingFragment>
             </EntityTypeMapping>
           </EntitySetMapping>
+          <FunctionImportMapping FunctionImportName="spLogin" FunctionName="quanlybanhangModel.Store.spLogin" />
         </EntityContainerMapping>
       </Mapping>
     </edmx:Mappings>

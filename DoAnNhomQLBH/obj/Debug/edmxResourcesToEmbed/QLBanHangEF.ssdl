@@ -31,12 +31,12 @@
     <Property Name="MaKH" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
     <Property Name="TenKH" Type="nvarchar" MaxLength="30" />
     <Property Name="DiaChi" Type="nvarchar" MaxLength="30" />
+    <Property Name="NgaySinh" Type="date" />
     <Property Name="GioiTinh" Type="nvarchar" MaxLength="10" />
     <Property Name="DienThoai" Type="nvarchar" MaxLength="7" />
     <Property Name="Fax" Type="nvarchar" MaxLength="12" />
     <Property Name="Email" Type="nvarchar" MaxLength="50" />
     <Property Name="Password" Type="nvarchar" MaxLength="50" />
-    <Property Name="NgaySinh" Type="date" />
   </EntityType>
   <EntityType Name="LoaiSP">
     <Key>
@@ -71,6 +71,7 @@
     <Property Name="DangGiamGia" Type="bit" />
     <Property Name="MaGiamGia" Type="int" />
     <Property Name="SoLuong" Type="int" />
+    <Property Name="GhiChu" Type="nvarchar" MaxLength="50" />
   </EntityType>
   <EntityType Name="sysdiagrams">
     <Key>
@@ -82,6 +83,18 @@
     <Property Name="version" Type="int" />
     <Property Name="definition" Type="varbinary(max)" />
   </EntityType>
+  <Association Name="FK_CTDH_DonHang">
+    <End Role="DonHang" Type="Self.DonHang" Multiplicity="1" />
+    <End Role="CTDH" Type="Self.CTDH" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="DonHang">
+        <PropertyRef Name="MaDH" />
+      </Principal>
+      <Dependent Role="CTDH">
+        <PropertyRef Name="MaDH" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
   <Association Name="FK_CTDH_SanPham">
     <End Role="SanPham" Type="Self.SanPham" Multiplicity="1" />
     <End Role="CTDH" Type="Self.CTDH" Multiplicity="*" />
@@ -118,6 +131,22 @@
       </Dependent>
     </ReferentialConstraint>
   </Association>
+  <Association Name="FK_SanPham_LoaiSP">
+    <End Role="LoaiSP" Type="Self.LoaiSP" Multiplicity="0..1" />
+    <End Role="SanPham" Type="Self.SanPham" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="LoaiSP">
+        <PropertyRef Name="MaLoaiSP" />
+      </Principal>
+      <Dependent Role="SanPham">
+        <PropertyRef Name="MaLoaiSP" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Function Name="spLogin" Aggregate="false" BuiltIn="false" NiladicFunction="false" IsComposable="false" ParameterTypeSemantics="AllowImplicitConversion" Schema="dbo">
+    <Parameter Name="Email" Type="nvarchar" Mode="In" />
+    <Parameter Name="Password" Type="nvarchar" Mode="In" />
+  </Function>
   <EntityContainer Name="quanlybanhangModelStoreContainer">
     <EntitySet Name="CTDH" EntityType="Self.CTDH" Schema="dbo" store:Type="Tables" />
     <EntitySet Name="DonHang" EntityType="Self.DonHang" Schema="dbo" store:Type="Tables" />
@@ -126,6 +155,10 @@
     <EntitySet Name="Nhanvien" EntityType="Self.Nhanvien" Schema="dbo" store:Type="Tables" />
     <EntitySet Name="SanPham" EntityType="Self.SanPham" Schema="dbo" store:Type="Tables" />
     <EntitySet Name="sysdiagrams" EntityType="Self.sysdiagrams" Schema="dbo" store:Type="Tables" />
+    <AssociationSet Name="FK_CTDH_DonHang" Association="Self.FK_CTDH_DonHang">
+      <End Role="DonHang" EntitySet="DonHang" />
+      <End Role="CTDH" EntitySet="CTDH" />
+    </AssociationSet>
     <AssociationSet Name="FK_CTDH_SanPham" Association="Self.FK_CTDH_SanPham">
       <End Role="SanPham" EntitySet="SanPham" />
       <End Role="CTDH" EntitySet="CTDH" />
@@ -137,6 +170,10 @@
     <AssociationSet Name="FK_DonHang_Nhanvien" Association="Self.FK_DonHang_Nhanvien">
       <End Role="Nhanvien" EntitySet="Nhanvien" />
       <End Role="DonHang" EntitySet="DonHang" />
+    </AssociationSet>
+    <AssociationSet Name="FK_SanPham_LoaiSP" Association="Self.FK_SanPham_LoaiSP">
+      <End Role="LoaiSP" EntitySet="LoaiSP" />
+      <End Role="SanPham" EntitySet="SanPham" />
     </AssociationSet>
   </EntityContainer>
 </Schema>

@@ -17,5 +17,18 @@ namespace DoAnNhomQLBH
             InitializeComponent();
         }
 
+
+        private void btQLSP_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void btQLKH_Click(object sender, EventArgs e)
+        {
+            FKhachHang kh = new FKhachHang();
+            kh.MdiParent = this;
+            kh.StartPosition = FormStartPosition.CenterScreen;
+            kh.Show();
+        }
     }
 }
