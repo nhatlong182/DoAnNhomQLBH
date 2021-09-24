@@ -22,10 +22,21 @@ namespace DoAnNhomQLBH
 
         private void FKhachHang_Load(object sender, EventArgs e)
         {
+            HienThiDSKH();
+        }
+        private void HienThiDSKH()
+        {
+            dGKhachHang.DataSource = null;
             buKH.LayDSKhachHang(dGKhachHang);
+            dGKhachHang.Columns[0].Width = (int)(dGKhachHang.Width * 0.1);
+            dGKhachHang.Columns[1].Width = (int)(dGKhachHang.Width * 0.18);
+            dGKhachHang.Columns[2].Width = (int)(dGKhachHang.Width * 0.15);
+            dGKhachHang.Columns[3].Width = (int)(dGKhachHang.Width * 0.15);
+            dGKhachHang.Columns[4].Width = (int)(dGKhachHang.Width * 0.15);
+            dGKhachHang.Columns[5].Width = (int)(dGKhachHang.Width * 0.15);
+            dGKhachHang.Columns[6].Width = (int)(dGKhachHang.Width * 0.15);
         }
 
-        
 
         private void dGKhachHang_CellClick(object sender, DataGridViewCellEventArgs e)
         {
@@ -57,7 +68,6 @@ namespace DoAnNhomQLBH
             }
             else
             {
-                Console.Write(MaKH);
                 MessageBox.Show("Xóa khách hàng thất bại !");
             }
         }

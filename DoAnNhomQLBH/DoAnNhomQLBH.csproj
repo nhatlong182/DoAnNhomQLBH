@@ -46,6 +46,7 @@
     <Reference Include="System.Core" />
     <Reference Include="System.Runtime.Serialization" />
     <Reference Include="System.Security" />
+    <Reference Include="System.Transactions" />
     <Reference Include="System.Xml.Linq" />
     <Reference Include="System.Data.DataSetExtensions" />
     <Reference Include="Microsoft.CSharp" />
@@ -57,13 +58,25 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="BUS\BUS_CTDonHang.cs" />
     <Compile Include="BUS\BUS_DangNhap.cs" />
+    <Compile Include="BUS\BUS_DatHang.cs" />
+    <Compile Include="BUS\BUS_DonHang.cs" />
+    <Compile Include="BUS\BUS_HomeAdmin.cs" />
     <Compile Include="BUS\BUS_KhachHang.cs" />
+    <Compile Include="BUS\BUS_NhanVien.cs" />
+    <Compile Include="BUS\BUS_SanPham.cs" />
     <Compile Include="CTDH.cs">
       <DependentUpon>QLBanHangEF.tt</DependentUpon>
     </Compile>
+    <Compile Include="DAO\DAO_CTDonHang.cs" />
     <Compile Include="DAO\DAO_DangNhap.cs" />
+    <Compile Include="DAO\DAO_DatHang.cs" />
+    <Compile Include="DAO\DAO_DonHang.cs" />
+    <Compile Include="DAO\DAO_HomeAdmin.cs" />
     <Compile Include="DAO\DAO_KhachHang.cs" />
+    <Compile Include="DAO\DAO_NhanVien.cs" />
+    <Compile Include="DAO\DAO_SanPham.cs" />
     <Compile Include="DonHang.cs">
       <DependentUpon>QLBanHangEF.tt</DependentUpon>
     </Compile>
@@ -73,17 +86,17 @@
     <Compile Include="FChiTietDonHang.Designer.cs">
       <DependentUpon>FChiTietDonHang.cs</DependentUpon>
     </Compile>
+    <Compile Include="FDatHang.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FDatHang.Designer.cs">
+      <DependentUpon>FDatHang.cs</DependentUpon>
+    </Compile>
     <Compile Include="FDonHang.cs">
       <SubType>Form</SubType>
     </Compile>
     <Compile Include="FDonHang.Designer.cs">
       <DependentUpon>FDonHang.cs</DependentUpon>
-    </Compile>
-    <Compile Include="FHome.cs">
-      <SubType>Form</SubType>
-    </Compile>
-    <Compile Include="FHome.Designer.cs">
-      <DependentUpon>FHome.cs</DependentUpon>
     </Compile>
     <Compile Include="FHomeAdmin.cs">
       <SubType>Form</SubType>
@@ -150,11 +163,11 @@
     <EmbeddedResource Include="FChiTietDonHang.resx">
       <DependentUpon>FChiTietDonHang.cs</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="FDatHang.resx">
+      <DependentUpon>FDatHang.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="FDonHang.resx">
       <DependentUpon>FDonHang.cs</DependentUpon>
-    </EmbeddedResource>
-    <EmbeddedResource Include="FHome.resx">
-      <DependentUpon>FHome.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="FHomeAdmin.resx">
       <DependentUpon>FHomeAdmin.cs</DependentUpon>

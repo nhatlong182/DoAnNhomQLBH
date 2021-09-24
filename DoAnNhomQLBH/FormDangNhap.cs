@@ -19,7 +19,7 @@ namespace DoAnNhomQLBH
             buDN = new BUS_DangNhap();
             InitializeComponent();
         }
-
+        public static int maNV;
         private void bntExit_Click(object sender, EventArgs e)
         {
             Application.Exit();
@@ -31,8 +31,10 @@ namespace DoAnNhomQLBH
             string pw = txtPass.Text;
             if(buDN.dangNhap(email,pw))
             {
+                
                 MessageBox.Show("Đăng nhập thành công");
-                FHomeAdmin h = new FHomeAdmin();
+                //MessageBox.Show("a += " + getID());
+                FHomeAdmin h = new FHomeAdmin(getID());
                 this.Hide();
                 h.ShowDialog();
                 
@@ -41,6 +43,25 @@ namespace DoAnNhomQLBH
             {
                 MessageBox.Show("Đăng nhập thất bại !");
             }
+        }
+        public int getID()
+        {
+            int id;
+            try
+            {
+                string email = txtUserName.Text;
+                string pw = txtPass.Text;
+                if (buDN.dangNhap(email, pw))
+                {
+                    id = buDN.GetID(email,pw);
+                    return id;
+                }
+            }
+            catch (Exception)
+            {
+                MessageBox.Show("Lỗi xảy ra khi truy vấn dữ liệu hoặc kết nối với server thất bại !");
+            }
+            return 0;
         }
     }
 }

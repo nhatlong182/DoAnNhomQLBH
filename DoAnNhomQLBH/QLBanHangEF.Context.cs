@@ -47,5 +47,18 @@ namespace DoAnNhomQLBH
     
             return ((IObjectContextAdapter)this).ObjectContext.ExecuteFunction<Nullable<int>>("spLogin", emailParameter, passwordParameter);
         }
+    
+        public virtual ObjectResult<Nullable<int>> sp_KiemTraSanPhamDonHang(Nullable<int> maDH, string maSP)
+        {
+            var maDHParameter = maDH.HasValue ?
+                new ObjectParameter("MaDH", maDH) :
+                new ObjectParameter("MaDH", typeof(int));
+    
+            var maSPParameter = maSP != null ?
+                new ObjectParameter("MaSP", maSP) :
+                new ObjectParameter("MaSP", typeof(string));
+    
+            return ((IObjectContextAdapter)this).ObjectContext.ExecuteFunction<Nullable<int>>("sp_KiemTraSanPhamDonHang", maDHParameter, maSPParameter);
+        }
     }
 }

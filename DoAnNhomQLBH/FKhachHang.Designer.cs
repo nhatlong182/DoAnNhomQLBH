@@ -167,11 +167,11 @@
             // groupBox3
             // 
             this.groupBox3.Controls.Add(this.dGKhachHang);
-            this.groupBox3.Location = new System.Drawing.Point(45, 346);
+            this.groupBox3.Location = new System.Drawing.Point(0, 346);
             this.groupBox3.Margin = new System.Windows.Forms.Padding(4);
             this.groupBox3.Name = "groupBox3";
             this.groupBox3.Padding = new System.Windows.Forms.Padding(4);
-            this.groupBox3.Size = new System.Drawing.Size(993, 231);
+            this.groupBox3.Size = new System.Drawing.Size(1079, 231);
             this.groupBox3.TabIndex = 11;
             this.groupBox3.TabStop = false;
             // 
@@ -182,7 +182,7 @@
             this.dGKhachHang.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.dGKhachHang.Name = "dGKhachHang";
             this.dGKhachHang.RowTemplate.Height = 24;
-            this.dGKhachHang.Size = new System.Drawing.Size(979, 210);
+            this.dGKhachHang.Size = new System.Drawing.Size(1061, 210);
             this.dGKhachHang.TabIndex = 0;
             this.dGKhachHang.CellClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.dGKhachHang_CellClick);
             // 

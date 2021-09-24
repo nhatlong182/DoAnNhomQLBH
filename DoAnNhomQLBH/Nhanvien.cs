@@ -26,7 +26,7 @@ namespace DoAnNhomQLBH
         public string Dienthoai { get; set; }
         public string Email { get; set; }
         public string Password { get; set; }
-        public Nullable<bool> Admin { get; set; }
+        public bool Admin { get; set; }
         public string GioiTinh { get; set; }
         public Nullable<System.DateTime> NgaySinh { get; set; }
     

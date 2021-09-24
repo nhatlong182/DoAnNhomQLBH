@@ -185,5 +185,9 @@
       <Parameter Name="Email" Mode="In" Type="String" />
       <Parameter Name="Password" Mode="In" Type="String" />
     </FunctionImport>
+    <FunctionImport Name="sp_KiemTraSanPhamDonHang" ReturnType="Collection(Int32)">
+      <Parameter Name="MaDH" Mode="In" Type="Int32" />
+      <Parameter Name="MaSP" Mode="In" Type="String" />
+    </FunctionImport>
   </EntityContainer>
 </Schema>

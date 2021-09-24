@@ -24,5 +24,17 @@ namespace DoAnNhomQLBH.BUS
             else
                 return false;
         }
+        public int GetID(string email,string pw)
+        {
+             int id = daDN.getID(email, pw);
+            if(daDN.getID(email, pw) == 0)
+            {
+                return 0;
+            }else
+            {
+                return id;
+            }
+            
+        }
     }
 }

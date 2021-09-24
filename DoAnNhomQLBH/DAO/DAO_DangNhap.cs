@@ -26,5 +26,20 @@ namespace DoAnNhomQLBH.DAO
                 return false;
             }
         }
+        public int getID(string email, string pw)
+        {
+            int id;
+            int? trangThai;
+            trangThai = db.spLogin(email, pw).SingleOrDefault();
+           
+            if (trangThai == 1)
+            {
+                Nhanvien nhanvien = db.Nhanviens.SingleOrDefault(s=> s.Email == email);
+                id = nhanvien.MaNV;
+                return id;
+            }
+            else
+                return 0;
+        }
     }
 }

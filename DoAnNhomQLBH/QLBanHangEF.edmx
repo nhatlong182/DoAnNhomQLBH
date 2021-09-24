@@ -148,6 +148,10 @@
             </Dependent>
           </ReferentialConstraint>
         </Association>
+        <Function Name="sp_KiemTraSanPhamDonHang" Aggregate="false" BuiltIn="false" NiladicFunction="false" IsComposable="false" ParameterTypeSemantics="AllowImplicitConversion" Schema="dbo">
+          <Parameter Name="MaDH" Type="int" Mode="In" />
+          <Parameter Name="MaSP" Type="nvarchar" Mode="In" />
+        </Function>
         <Function Name="spLogin" Aggregate="false" BuiltIn="false" NiladicFunction="false" IsComposable="false" ParameterTypeSemantics="AllowImplicitConversion" Schema="dbo">
           <Parameter Name="Email" Type="nvarchar" Mode="In" />
           <Parameter Name="Password" Type="nvarchar" Mode="In" />
@@ -370,6 +374,10 @@
             <Parameter Name="Email" Mode="In" Type="String" />
             <Parameter Name="Password" Mode="In" Type="String" />
           </FunctionImport>
+          <FunctionImport Name="sp_KiemTraSanPhamDonHang" ReturnType="Collection(Int32)">
+            <Parameter Name="MaDH" Mode="In" Type="Int32" />
+            <Parameter Name="MaSP" Mode="In" Type="String" />
+          </FunctionImport>
         </EntityContainer>
       </Schema>
     </edmx:ConceptualModels>
@@ -467,6 +475,7 @@
             </EntityTypeMapping>
           </EntitySetMapping>
           <FunctionImportMapping FunctionImportName="spLogin" FunctionName="quanlybanhangModel.Store.spLogin" />
+          <FunctionImportMapping FunctionImportName="sp_KiemTraSanPhamDonHang" FunctionName="quanlybanhangModel.Store.sp_KiemTraSanPhamDonHang" />
         </EntityContainerMapping>
       </Mapping>
     </edmx:Mappings>
