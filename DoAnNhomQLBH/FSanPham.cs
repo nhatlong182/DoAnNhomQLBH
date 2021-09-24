@@ -59,7 +59,10 @@ namespace DoAnNhomQLBH
         private void btThem_Click(object sender, EventArgs e)
         {
             SanPham s = new SanPham();
-            s.MaSP = txtMaSP.Text;
+
+            DateTime d = DateTime.Now;
+
+            s.MaSP = "SP" + d.Second.ToString() + d.Millisecond.ToString();
             s.TenSP = txtTenSP.Text;
             s.DonGia = Int32.Parse(txtDonGia.Text);
             s.SoLuong = Int32.Parse(txtSoLuong.Text);
@@ -104,11 +107,14 @@ namespace DoAnNhomQLBH
             {
                 MessageBox.Show("Thêm sản phẩm thất bại !");
             }
+            
+
         }
 
         private void btSua_Click(object sender, EventArgs e)
         {
             SanPham s = new SanPham();
+
             s.MaSP = txtMaSP.Text;
             s.TenSP = txtTenSP.Text;
             s.DonGia = Int32.Parse(txtDonGia.Text);
@@ -144,7 +150,7 @@ namespace DoAnNhomQLBH
                 }
                 else
                 {
-                    
+
                     MessageBox.Show("Sửa sản phẩm thành công");
                     buSP.LayDSSanPham(dGSP);
                 }
@@ -154,6 +160,8 @@ namespace DoAnNhomQLBH
             {
                 MessageBox.Show("Sửa sản phẩm thất bại !");
             }
+
+            
         }
 
         private void btXoa_Click(object sender, EventArgs e)

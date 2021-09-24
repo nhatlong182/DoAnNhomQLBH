@@ -161,7 +161,7 @@
             // 
             this.cbGiamGia.FormattingEnabled = true;
             this.cbGiamGia.Location = new System.Drawing.Point(380, 84);
-            this.cbGiamGia.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.cbGiamGia.Margin = new System.Windows.Forms.Padding(2);
             this.cbGiamGia.Name = "cbGiamGia";
             this.cbGiamGia.Size = new System.Drawing.Size(110, 21);
             this.cbGiamGia.TabIndex = 26;
@@ -169,7 +169,7 @@
             // pictureBox1
             // 
             this.pictureBox1.Location = new System.Drawing.Point(560, 10);
-            this.pictureBox1.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.pictureBox1.Margin = new System.Windows.Forms.Padding(2);
             this.pictureBox1.Name = "pictureBox1";
             this.pictureBox1.Size = new System.Drawing.Size(167, 157);
             this.pictureBox1.TabIndex = 25;
@@ -179,7 +179,7 @@
             // 
             this.btHinh.ForeColor = System.Drawing.Color.Blue;
             this.btHinh.Location = new System.Drawing.Point(496, 28);
-            this.btHinh.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.btHinh.Margin = new System.Windows.Forms.Padding(2);
             this.btHinh.Name = "btHinh";
             this.btHinh.Size = new System.Drawing.Size(40, 24);
             this.btHinh.TabIndex = 24;
@@ -198,7 +198,7 @@
             // 
             this.cbMaLSP.FormattingEnabled = true;
             this.cbMaLSP.Location = new System.Drawing.Point(116, 137);
-            this.cbMaLSP.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.cbMaLSP.Margin = new System.Windows.Forms.Padding(2);
             this.cbMaLSP.Name = "cbMaLSP";
             this.cbMaLSP.Size = new System.Drawing.Size(200, 21);
             this.cbMaLSP.TabIndex = 21;
@@ -249,6 +249,7 @@
             // 
             // txtMaSP
             // 
+            this.txtMaSP.Enabled = false;
             this.txtMaSP.Location = new System.Drawing.Point(117, 26);
             this.txtMaSP.Name = "txtMaSP";
             this.txtMaSP.Size = new System.Drawing.Size(200, 20);
@@ -354,7 +355,7 @@
             // 
             this.btSearch.ForeColor = System.Drawing.Color.Blue;
             this.btSearch.Location = new System.Drawing.Point(421, 16);
-            this.btSearch.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.btSearch.Margin = new System.Windows.Forms.Padding(2);
             this.btSearch.Name = "btSearch";
             this.btSearch.Size = new System.Drawing.Size(79, 25);
             this.btSearch.TabIndex = 10;
@@ -365,7 +366,7 @@
             // 
             this.btXoa.ForeColor = System.Drawing.Color.Blue;
             this.btXoa.Location = new System.Drawing.Point(217, 16);
-            this.btXoa.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.btXoa.Margin = new System.Windows.Forms.Padding(2);
             this.btXoa.Name = "btXoa";
             this.btXoa.Size = new System.Drawing.Size(76, 25);
             this.btXoa.TabIndex = 9;
@@ -377,7 +378,7 @@
             // 
             this.btSua.ForeColor = System.Drawing.Color.Blue;
             this.btSua.Location = new System.Drawing.Point(118, 16);
-            this.btSua.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.btSua.Margin = new System.Windows.Forms.Padding(2);
             this.btSua.Name = "btSua";
             this.btSua.Size = new System.Drawing.Size(76, 25);
             this.btSua.TabIndex = 8;
@@ -389,7 +390,7 @@
             // 
             this.btDong.ForeColor = System.Drawing.Color.Blue;
             this.btDong.Location = new System.Drawing.Point(653, 15);
-            this.btDong.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.btDong.Margin = new System.Windows.Forms.Padding(2);
             this.btDong.Name = "btDong";
             this.btDong.Size = new System.Drawing.Size(75, 25);
             this.btDong.TabIndex = 7;
@@ -401,7 +402,7 @@
             // 
             this.button3.ForeColor = System.Drawing.Color.Blue;
             this.button3.Location = new System.Drawing.Point(526, 16);
-            this.button3.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.button3.Margin = new System.Windows.Forms.Padding(2);
             this.button3.Name = "button3";
             this.button3.Size = new System.Drawing.Size(96, 25);
             this.button3.TabIndex = 5;
@@ -412,7 +413,7 @@
             // 
             this.btLuu.ForeColor = System.Drawing.Color.Blue;
             this.btLuu.Location = new System.Drawing.Point(316, 16);
-            this.btLuu.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.btLuu.Margin = new System.Windows.Forms.Padding(2);
             this.btLuu.Name = "btLuu";
             this.btLuu.Size = new System.Drawing.Size(80, 25);
             this.btLuu.TabIndex = 4;
@@ -423,7 +424,7 @@
             // 
             this.btThem.ForeColor = System.Drawing.Color.Blue;
             this.btThem.Location = new System.Drawing.Point(19, 15);
-            this.btThem.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.btThem.Margin = new System.Windows.Forms.Padding(2);
             this.btThem.Name = "btThem";
             this.btThem.Size = new System.Drawing.Size(79, 25);
             this.btThem.TabIndex = 3;
@@ -444,7 +445,7 @@
             // 
             this.dGSP.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
             this.dGSP.Location = new System.Drawing.Point(8, 19);
-            this.dGSP.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.dGSP.Margin = new System.Windows.Forms.Padding(2);
             this.dGSP.Name = "dGSP";
             this.dGSP.RowTemplate.Height = 24;
             this.dGSP.Size = new System.Drawing.Size(719, 214);
