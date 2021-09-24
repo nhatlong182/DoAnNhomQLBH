@@ -29,7 +29,7 @@
         private void InitializeComponent()
         {
             this.panel1 = new System.Windows.Forms.Panel();
-            this.btQLCTDH = new System.Windows.Forms.Button();
+            this.btDangXuat = new System.Windows.Forms.Button();
             this.btQLDH = new System.Windows.Forms.Button();
             this.btQLKH = new System.Windows.Forms.Button();
             this.btQLNV = new System.Windows.Forms.Button();
@@ -40,7 +40,7 @@
             // panel1
             // 
             this.panel1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(231)))), ((int)(((byte)(76)))), ((int)(((byte)(60)))));
-            this.panel1.Controls.Add(this.btQLCTDH);
+            this.panel1.Controls.Add(this.btDangXuat);
             this.panel1.Controls.Add(this.btQLDH);
             this.panel1.Controls.Add(this.btQLKH);
             this.panel1.Controls.Add(this.btQLNV);
@@ -48,22 +48,25 @@
             this.panel1.Dock = System.Windows.Forms.DockStyle.Top;
             this.panel1.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(231)))), ((int)(((byte)(76)))), ((int)(((byte)(60)))));
             this.panel1.Location = new System.Drawing.Point(0, 0);
+            this.panel1.Margin = new System.Windows.Forms.Padding(2);
             this.panel1.Name = "panel1";
-            this.panel1.Size = new System.Drawing.Size(1160, 82);
+            this.panel1.Size = new System.Drawing.Size(870, 67);
             this.panel1.TabIndex = 2;
             // 
-            // btQLCTDH
+            // btDangXuat
             // 
-            this.btQLCTDH.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(231)))), ((int)(((byte)(76)))), ((int)(((byte)(60)))));
-            this.btQLCTDH.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btQLCTDH.ForeColor = System.Drawing.Color.White;
-            this.btQLCTDH.ImageAlign = System.Drawing.ContentAlignment.TopCenter;
-            this.btQLCTDH.Location = new System.Drawing.Point(948, 14);
-            this.btQLCTDH.Name = "btQLCTDH";
-            this.btQLCTDH.Size = new System.Drawing.Size(177, 55);
-            this.btQLCTDH.TabIndex = 5;
-            this.btQLCTDH.Text = "Quản Lý CTDH";
-            this.btQLCTDH.UseVisualStyleBackColor = false;
+            this.btDangXuat.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(231)))), ((int)(((byte)(76)))), ((int)(((byte)(60)))));
+            this.btDangXuat.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btDangXuat.ForeColor = System.Drawing.Color.White;
+            this.btDangXuat.ImageAlign = System.Drawing.ContentAlignment.TopCenter;
+            this.btDangXuat.Location = new System.Drawing.Point(711, 11);
+            this.btDangXuat.Margin = new System.Windows.Forms.Padding(2);
+            this.btDangXuat.Name = "btDangXuat";
+            this.btDangXuat.Size = new System.Drawing.Size(133, 45);
+            this.btDangXuat.TabIndex = 5;
+            this.btDangXuat.Text = "Đăng xuất";
+            this.btDangXuat.UseVisualStyleBackColor = false;
+            this.btDangXuat.Click += new System.EventHandler(this.btDangXuat_Click);
             // 
             // btQLDH
             // 
@@ -71,9 +74,10 @@
             this.btQLDH.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btQLDH.ForeColor = System.Drawing.Color.White;
             this.btQLDH.ImageAlign = System.Drawing.ContentAlignment.TopCenter;
-            this.btQLDH.Location = new System.Drawing.Point(721, 12);
+            this.btQLDH.Location = new System.Drawing.Point(541, 10);
+            this.btQLDH.Margin = new System.Windows.Forms.Padding(2);
             this.btQLDH.Name = "btQLDH";
-            this.btQLDH.Size = new System.Drawing.Size(188, 55);
+            this.btQLDH.Size = new System.Drawing.Size(141, 45);
             this.btQLDH.TabIndex = 4;
             this.btQLDH.Text = "Quản Lý Đơn Hàng";
             this.btQLDH.UseVisualStyleBackColor = false;
@@ -85,9 +89,10 @@
             this.btQLKH.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btQLKH.ForeColor = System.Drawing.Color.White;
             this.btQLKH.ImageAlign = System.Drawing.ContentAlignment.TopCenter;
-            this.btQLKH.Location = new System.Drawing.Point(260, 14);
+            this.btQLKH.Location = new System.Drawing.Point(195, 11);
+            this.btQLKH.Margin = new System.Windows.Forms.Padding(2);
             this.btQLKH.Name = "btQLKH";
-            this.btQLKH.Size = new System.Drawing.Size(195, 55);
+            this.btQLKH.Size = new System.Drawing.Size(146, 45);
             this.btQLKH.TabIndex = 3;
             this.btQLKH.Text = "Quản Lý Khách Hàng";
             this.btQLKH.UseVisualStyleBackColor = false;
@@ -99,9 +104,10 @@
             this.btQLNV.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btQLNV.ForeColor = System.Drawing.Color.White;
             this.btQLNV.ImageAlign = System.Drawing.ContentAlignment.TopCenter;
-            this.btQLNV.Location = new System.Drawing.Point(33, 14);
+            this.btQLNV.Location = new System.Drawing.Point(25, 11);
+            this.btQLNV.Margin = new System.Windows.Forms.Padding(2);
             this.btQLNV.Name = "btQLNV";
-            this.btQLNV.Size = new System.Drawing.Size(188, 55);
+            this.btQLNV.Size = new System.Drawing.Size(141, 45);
             this.btQLNV.TabIndex = 2;
             this.btQLNV.Text = "Quản Lý Nhân Viên";
             this.btQLNV.UseVisualStyleBackColor = false;
@@ -113,9 +119,10 @@
             this.btQLSP.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btQLSP.ForeColor = System.Drawing.Color.White;
             this.btQLSP.ImageAlign = System.Drawing.ContentAlignment.TopCenter;
-            this.btQLSP.Location = new System.Drawing.Point(494, 14);
+            this.btQLSP.Location = new System.Drawing.Point(370, 11);
+            this.btQLSP.Margin = new System.Windows.Forms.Padding(2);
             this.btQLSP.Name = "btQLSP";
-            this.btQLSP.Size = new System.Drawing.Size(188, 55);
+            this.btQLSP.Size = new System.Drawing.Size(141, 45);
             this.btQLSP.TabIndex = 1;
             this.btQLSP.Text = "Quản Lý Sản Phẩm";
             this.btQLSP.UseVisualStyleBackColor = false;
@@ -123,11 +130,12 @@
             // 
             // FHomeAdmin
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
+            this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(1160, 794);
+            this.ClientSize = new System.Drawing.Size(870, 645);
             this.Controls.Add(this.panel1);
             this.IsMdiContainer = true;
+            this.Margin = new System.Windows.Forms.Padding(2);
             this.Name = "FHomeAdmin";
             this.Text = "FHomeAdmin";
             this.Load += new System.EventHandler(this.FHomeAdmin_Load);
@@ -140,7 +148,7 @@
 
         private System.Windows.Forms.Panel panel1;
         private System.Windows.Forms.Button btQLSP;
-        private System.Windows.Forms.Button btQLCTDH;
+        private System.Windows.Forms.Button btDangXuat;
         private System.Windows.Forms.Button btQLDH;
         private System.Windows.Forms.Button btQLKH;
         private System.Windows.Forms.Button btQLNV;

@@ -75,5 +75,12 @@ namespace DoAnNhomQLBH
                 btQLNV.Enabled = false;
             }
         }
+
+        private void btDangXuat_Click(object sender, EventArgs e)
+        {
+            FormDangNhap f = new FormDangNhap();
+            this.Hide();
+            f.ShowDialog();
+        }
     }
 }

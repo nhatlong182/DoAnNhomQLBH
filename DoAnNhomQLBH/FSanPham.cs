@@ -46,7 +46,7 @@ namespace DoAnNhomQLBH
         {
             if (e.RowIndex >= 0 && e.RowIndex < dGSP.Rows.Count)
             {
-                txtMaSP.Enabled = false;
+                //txtMaSP.Enabled = false;
                 txtMaSP.Text = dGSP.Rows[e.RowIndex].Cells["MaSP"].Value.ToString();
                 txtTenSP.Text = dGSP.Rows[e.RowIndex].Cells["TenSP"].Value.ToString();
                 txtDonGia.Text = dGSP.Rows[e.RowIndex].Cells["DonGia"].Value.ToString();
@@ -95,14 +95,14 @@ namespace DoAnNhomQLBH
                 else
                 {
 
-                    MessageBox.Show("Thêm khách hàng thành công");
+                    MessageBox.Show("Thêm sản phẩm thành công");
                     buSP.LayDSSanPham(dGSP);
                 }
 
             }
             else
             {
-                MessageBox.Show("Thêm khách hàng thất bại !");
+                MessageBox.Show("Thêm sản phẩm thất bại !");
             }
         }
 
@@ -162,13 +162,18 @@ namespace DoAnNhomQLBH
             MaSP = dGSP.Rows[dGSP.CurrentRow.Index].Cells[0].Value.ToString();
             if (buSP.xoaSanPham(MaSP))
             {
-                MessageBox.Show("Xóa nhân viên thành công");
+                MessageBox.Show("Xóa sản phẩm thành công");
                 buSP.LayDSSanPham(dGSP);
             }
             else
             {
-                MessageBox.Show("Xóa nhân viên thất bại !");
+                MessageBox.Show("Xóa sản phẩm thất bại !");
             }
+        }
+
+        private void txtMaSP_TextChanged(object sender, EventArgs e)
+        {
+
         }
     }
 }

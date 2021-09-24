@@ -49,7 +49,7 @@ namespace DoAnNhomQLBH
                 comboBoxKH.Text = gVDH.Rows[e.RowIndex].Cells[1].Value.ToString();
                 comboBoxNV.Text = gVDH.Rows[e.RowIndex].Cells[2].Value.ToString();
                 dtpNgayDH.Text = gVDH.Rows[e.RowIndex].Cells[3].Value.ToString();
-                dtpNgayGiao.Text = gVDH.Rows[e.RowIndex].Cells[4].Value.ToString();
+                //dtpNgayGiao.Text = gVDH.Rows[e.RowIndex].Cells[4].Value.ToString();
                 txtDiaChiGiao.Text = gVDH.Rows[e.RowIndex].Cells[5].Value.ToString();
                 txtGhiChu.Text = gVDH.Rows[e.RowIndex].Cells[6].Value.ToString();
             }
@@ -124,5 +124,7 @@ namespace DoAnNhomQLBH
             f.maDH = maDonHang;
             f.ShowDialog();
         }
+
+        
     }
 }

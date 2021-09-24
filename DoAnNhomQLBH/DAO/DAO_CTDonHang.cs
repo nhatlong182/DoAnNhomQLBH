@@ -58,25 +58,52 @@ namespace DoAnNhomQLBH.DAO
                 return false;
 
         }
-        public void XoaCTDH(CTDH d)
-        {
-            
-            CTDH ct = db.CTDHs.Find(d.MaSP);
-            ct.MaSP = null;
-            db.CTDHs.Remove(ct);
-            db.SaveChanges();
+        //public void XoaCTDH(CTDH d)
+        //{
 
+        //    CTDH ct = db.CTDHs.Where(x => x.MaDH == d.MaDH && x.MaSP == d.MaSP).SingleOrDefault();
+        //    //ct.MaSP = null;
+        //    db.CTDHs.Remove(ct);
+        //    db.SaveChanges();
+
+        //}
+        public bool xoaCTDH(int MaDH, string MaSP)
+        {
+            bool tinhTrang = false;
+            CTDH ct = db.CTDHs.Where(s => s.MaDH == MaDH && s.MaSP == MaSP).SingleOrDefault();
+
+            if (ct != null)
+            {
+                db.CTDHs.Remove(ct);
+                db.SaveChanges();
+                tinhTrang = true;
+            }
+            else
+            {
+                tinhTrang = false;
+            }
+
+            return tinhTrang;
         }
-        public void SuaChiTietDH(CTDH donHang)
+        public bool SuaChiTietDH(CTDH donHang)
         {
 
-            CTDH d = db.CTDHs.Find(donHang.MaDH);
-            d = db.CTDHs.Find(donHang.MaSP);
-            d.MaSP = donHang.MaSP;
-            d.ThanhTien = donHang.ThanhTien;
-            d.Soluong = donHang.Soluong;
-            d.Size = donHang.Size;
-            db.SaveChanges();
+            CTDH d = db.CTDHs.Where(s => s.MaDH == donHang.MaDH && s.MaSP == donHang.MaSP).SingleOrDefault();
+
+            if(d != null)
+            {
+                d.MaSP = donHang.MaSP;
+                SanPham sp = db.SanPhams.Find(d.MaSP);
+
+                d.ThanhTien = donHang.Soluong * sp.DonGia;
+                d.Soluong = donHang.Soluong;
+                d.Size = donHang.Size;
+                db.SaveChanges();
+                return true;
+            }
+            
+
+            return false;
 
         }
     }

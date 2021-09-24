@@ -26,17 +26,9 @@ namespace DoAnNhomQLBH.DAO
         
         public void ThemCTDH(CTDH d)
         {
-            
-
             db.CTDHs.Add(d);
             db.SaveChanges();
-            SanPham sp = db.SanPhams.Find(d.MaSP);
-            CTDH s = db.CTDHs.Find(d.MaSP);
-            if (sp.SoLuong < 0)
-            {
-                sp.SoLuong = 0;     
-            }
-            db.SaveChanges();
+            
         }
     }
 }

@@ -32,6 +32,7 @@ namespace DoAnNhomQLBH
         }
         private void FChiTietDonHang_Load(object sender, EventArgs e)
         {
+            txtMaDH.Text = maDH.ToString();
             buCT.LayDSSP(cbMaSP);
             HienThiDanhSachCTDH();
         }
@@ -63,15 +64,8 @@ namespace DoAnNhomQLBH
 
         private void btXoa_Click(object sender, EventArgs e)
         {
-            CTDH d = new CTDH();
-            d.MaDH = int.Parse(txtMaDH.Text);
-            if (buCT.xoaCTDH(d))
-            {
-                MessageBox.Show("Xóa Đơn Hàng Thành Công !");
-                buCT.HienThiDSCTDH(gVCTDH);
-            }
-            else
-                MessageBox.Show("Xóa Đơn Hàng Thất Bại !");
+            buCT.xoaCTDH(maDH, cbMaSP.SelectedValue.ToString());
+            HienThiDanhSachCTDH();
         }
 
         private void btSua_Click(object sender, EventArgs e)
@@ -84,20 +78,19 @@ namespace DoAnNhomQLBH
             oD.Size = txtSize.Text;
 
 
-            if (buCT.suaCTDH(oD))
-            {
-                MessageBox.Show("Sửa chi tiết đơn hàng thành công !");
-                buCT.HienThiDSCTDH(gVCTDH);
-            }
-            else
-            {
-                MessageBox.Show("Sửa Chi Tiết Đơn Hàng Thất Bại !");
-            }
+            buCT.suaCTDH(oD);
+            HienThiDanhSachCTDH();
+
         }
 
         private void FChiTietDonHang_Activated(object sender, EventArgs e)
         {
             HienThiDanhSachCTDH();
+        }
+
+        private void cbMaSP_SelectedIndexChanged(object sender, EventArgs e)
+        {
+
         }
     }
 }

@@ -31,35 +31,41 @@ namespace DoAnNhomQLBH.BUS
             cb.ValueMember = "MaSP";
         }
 
-        public bool xoaCTDH(CTDH d)
+        public void xoaCTDH(int MaDH, string MaSP)
         {
-            if (daCT.KiemTraCTDH(d))
+            //if (daCT.KiemTraCTDH(d))
+            //{
+            //    try
+            //    {
+            //        daCT.XoaCTDH(d);
+            //        return true;
+            //    }
+            //    catch (DbUpdateException ex)
+            //    {
+            //        MessageBox.Show(ex.Message);
+            //        return false;
+            //    }
+            //}
+            //else
+            //    return false;
+            if (daCT.xoaCTDH(MaDH, MaSP) == true)
             {
-                try
-                {
-                    daCT.XoaCTDH(d);
-                    return true;
-                }
-                catch (DbUpdateException ex)
-                {
-                    MessageBox.Show(ex.Message);
-                    return false;
-                }
+                MessageBox.Show("Đã xóa thành công");
             }
             else
-                return false;
-        }
-        public bool suaCTDH(CTDH d)
-        {
-            try
             {
-                daCT.SuaChiTietDH(d);
-                return true;
+                MessageBox.Show("Lỗi !!!, xóa không thành công");
             }
-            catch (DbUpdateException ex)
+        }
+        public void suaCTDH(CTDH d)
+        {
+            if(daCT.SuaChiTietDH(d) == true)
             {
-                MessageBox.Show(ex.Message);
-                return false;
+                MessageBox.Show("Đã sửa thành công");
+            }
+            else
+            {
+                MessageBox.Show("Lỗi !!!, sửa không thành công");
             }
         }
     }

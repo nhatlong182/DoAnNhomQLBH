@@ -57,6 +57,11 @@ namespace DoAnNhomQLBH.DAO
         public void xoaSP(string masp)
         {
             SanPham k = db.SanPhams.Find(masp);
+            var ct = db.CTDHs.Where(x => x.MaSP == masp).ToList();
+            foreach(CTDH ctdh in ct)
+            {
+                db.CTDHs.Remove(ctdh);
+            }
             db.SanPhams.Remove(k);
             db.SaveChanges();
         }
