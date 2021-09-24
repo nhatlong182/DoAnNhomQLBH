@@ -33,20 +33,6 @@ namespace DoAnNhomQLBH
         public virtual DbSet<LoaiSP> LoaiSPs { get; set; }
         public virtual DbSet<Nhanvien> Nhanviens { get; set; }
         public virtual DbSet<SanPham> SanPhams { get; set; }
-        public virtual DbSet<sysdiagram> sysdiagrams { get; set; }
-    
-        public virtual ObjectResult<Nullable<int>> spLogin(string email, string password)
-        {
-            var emailParameter = email != null ?
-                new ObjectParameter("Email", email) :
-                new ObjectParameter("Email", typeof(string));
-    
-            var passwordParameter = password != null ?
-                new ObjectParameter("Password", password) :
-                new ObjectParameter("Password", typeof(string));
-    
-            return ((IObjectContextAdapter)this).ObjectContext.ExecuteFunction<Nullable<int>>("spLogin", emailParameter, passwordParameter);
-        }
     
         public virtual ObjectResult<Nullable<int>> sp_KiemTraSanPhamDonHang(Nullable<int> maDH, string maSP)
         {
@@ -59,6 +45,19 @@ namespace DoAnNhomQLBH
                 new ObjectParameter("MaSP", typeof(string));
     
             return ((IObjectContextAdapter)this).ObjectContext.ExecuteFunction<Nullable<int>>("sp_KiemTraSanPhamDonHang", maDHParameter, maSPParameter);
+        }
+    
+        public virtual ObjectResult<Nullable<int>> spLogin(string email, string password)
+        {
+            var emailParameter = email != null ?
+                new ObjectParameter("Email", email) :
+                new ObjectParameter("Email", typeof(string));
+    
+            var passwordParameter = password != null ?
+                new ObjectParameter("Password", password) :
+                new ObjectParameter("Password", typeof(string));
+    
+            return ((IObjectContextAdapter)this).ObjectContext.ExecuteFunction<Nullable<int>>("spLogin", emailParameter, passwordParameter);
         }
     }
 }

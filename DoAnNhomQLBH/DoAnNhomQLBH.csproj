@@ -67,7 +67,7 @@
     <Compile Include="BUS\BUS_NhanVien.cs" />
     <Compile Include="BUS\BUS_SanPham.cs" />
     <Compile Include="CTDH.cs">
-      <DependentUpon>QLBanHangEF.tt</DependentUpon>
+      <DependentUpon>quanlybanhangedmx.tt</DependentUpon>
     </Compile>
     <Compile Include="DAO\DAO_CTDonHang.cs" />
     <Compile Include="DAO\DAO_DangNhap.cs" />
@@ -78,7 +78,7 @@
     <Compile Include="DAO\DAO_NhanVien.cs" />
     <Compile Include="DAO\DAO_SanPham.cs" />
     <Compile Include="DonHang.cs">
-      <DependentUpon>QLBanHangEF.tt</DependentUpon>
+      <DependentUpon>quanlybanhangedmx.tt</DependentUpon>
     </Compile>
     <Compile Include="FChiTietDonHang.cs">
       <SubType>Form</SubType>
@@ -129,36 +129,33 @@
       <DependentUpon>FSanPham.cs</DependentUpon>
     </Compile>
     <Compile Include="KhachHang.cs">
-      <DependentUpon>QLBanHangEF.tt</DependentUpon>
+      <DependentUpon>quanlybanhangedmx.tt</DependentUpon>
     </Compile>
     <Compile Include="LoaiSP.cs">
-      <DependentUpon>QLBanHangEF.tt</DependentUpon>
+      <DependentUpon>quanlybanhangedmx.tt</DependentUpon>
     </Compile>
     <Compile Include="Nhanvien.cs">
-      <DependentUpon>QLBanHangEF.tt</DependentUpon>
+      <DependentUpon>quanlybanhangedmx.tt</DependentUpon>
     </Compile>
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
-    <Compile Include="QLBanHangEF.Context.cs">
+    <Compile Include="quanlybanhangedmx.Context.cs">
       <AutoGen>True</AutoGen>
       <DesignTime>True</DesignTime>
-      <DependentUpon>QLBanHangEF.Context.tt</DependentUpon>
+      <DependentUpon>quanlybanhangedmx.Context.tt</DependentUpon>
     </Compile>
-    <Compile Include="QLBanHangEF.cs">
+    <Compile Include="quanlybanhangedmx.cs">
       <AutoGen>True</AutoGen>
       <DesignTime>True</DesignTime>
-      <DependentUpon>QLBanHangEF.tt</DependentUpon>
+      <DependentUpon>quanlybanhangedmx.tt</DependentUpon>
     </Compile>
-    <Compile Include="QLBanHangEF.Designer.cs">
+    <Compile Include="quanlybanhangedmx.Designer.cs">
       <AutoGen>True</AutoGen>
       <DesignTime>True</DesignTime>
-      <DependentUpon>QLBanHangEF.edmx</DependentUpon>
+      <DependentUpon>quanlybanhangedmx.edmx</DependentUpon>
     </Compile>
     <Compile Include="SanPham.cs">
-      <DependentUpon>QLBanHangEF.tt</DependentUpon>
-    </Compile>
-    <Compile Include="sysdiagram.cs">
-      <DependentUpon>QLBanHangEF.tt</DependentUpon>
+      <DependentUpon>quanlybanhangedmx.tt</DependentUpon>
     </Compile>
     <EmbeddedResource Include="FChiTietDonHang.resx">
       <DependentUpon>FChiTietDonHang.cs</DependentUpon>
@@ -206,15 +203,17 @@
     </Compile>
   </ItemGroup>
   <ItemGroup>
-    <None Include="App.config" />
+    <None Include="App.config">
+      <SubType>Designer</SubType>
+    </None>
   </ItemGroup>
   <ItemGroup>
-    <EntityDeploy Include="QLBanHangEF.edmx">
+    <EntityDeploy Include="quanlybanhangedmx.edmx">
       <Generator>EntityModelCodeGenerator</Generator>
-      <LastGenOutput>QLBanHangEF.Designer.cs</LastGenOutput>
+      <LastGenOutput>quanlybanhangedmx.Designer.cs</LastGenOutput>
     </EntityDeploy>
-    <None Include="QLBanHangEF.edmx.diagram">
-      <DependentUpon>QLBanHangEF.edmx</DependentUpon>
+    <None Include="quanlybanhangedmx.edmx.diagram">
+      <DependentUpon>quanlybanhangedmx.edmx</DependentUpon>
     </None>
     <None Include="Resources\avtnam.png" />
   </ItemGroup>
@@ -222,16 +221,68 @@
     <Service Include="{508349B6-6B84-4DF5-91F0-309BEEBAD82D}" />
   </ItemGroup>
   <ItemGroup>
-    <Content Include="QLBanHangEF.Context.tt">
+    <Content Include="quanlybanhangedmx.Context.tt">
       <Generator>TextTemplatingFileGenerator</Generator>
-      <DependentUpon>QLBanHangEF.edmx</DependentUpon>
-      <LastGenOutput>QLBanHangEF.Context.cs</LastGenOutput>
+      <DependentUpon>quanlybanhangedmx.edmx</DependentUpon>
+      <LastGenOutput>quanlybanhangedmx.Context.cs</LastGenOutput>
     </Content>
-    <Content Include="QLBanHangEF.tt">
+    <Content Include="quanlybanhangedmx.tt">
       <Generator>TextTemplatingFileGenerator</Generator>
-      <DependentUpon>QLBanHangEF.edmx</DependentUpon>
-      <LastGenOutput>QLBanHangEF.cs</LastGenOutput>
+      <DependentUpon>quanlybanhangedmx.edmx</DependentUpon>
+      <LastGenOutput>quanlybanhangedmx.cs</LastGenOutput>
     </Content>
+    <Content Include="Resources\avtnu.jpg" />
+    <Content Include="images\0912hoodiewashedbe.jpg" />
+    <Content Include="images\0912hoodiewashedblack.jpg" />
+    <Content Include="images\0912logohoodiewashed.jpg" />
+    <Content Include="images\AoHoodieCam.jpg" />
+    <Content Include="images\AoHoodieDen.jpg" />
+    <Content Include="images\AoHoodieXam.jpg" />
+    <Content Include="images\aopolosocgray.jpg" />
+    <Content Include="images\aopoloxanh.jpg" />
+    <Content Include="images\AoSoMiCaRoDo.jpg" />
+    <Content Include="images\aosomicarongantaytrang.jpg" />
+    <Content Include="images\aosomicarongantayvang.jpg" />
+    <Content Include="images\AoSoMiCaRoVang.jpg" />
+    <Content Include="images\AoThunCam.jpg" />
+    <Content Include="images\AoThunDen.jpg" />
+    <Content Include="images\AoThunNau.jpg" />
+    <Content Include="images\AoThunNauNhat.jpg" />
+    <Content Include="images\AoThunTrang.jpg" />
+    <Content Include="images\AoThunXam.jpg" />
+    <Content Include="images\AoThunXam2.jpg" />
+    <Content Include="images\AoThunXamNhat.jpg" />
+    <Content Include="images\AoThunXanhLa.jpg" />
+    <Content Include="images\aoutandyxam.jpg" />
+    <Content Include="images\aoutanimalnavy.jpg" />
+    <Content Include="images\aoutanimaltrang.jpg" />
+    <Content Include="images\aoutanimalxanh.jpg" />
+    <Content Include="images\aoutmarvel.jpg" />
+    <Content Include="images\aoutmonsterbe.jpg" />
+    <Content Include="images\aoutpeanutbe.jpg" />
+    <Content Include="images\aoutthebrandsden.jpg" />
+    <Content Include="images\aozaraden.jpg" />
+    <Content Include="images\aozaranaunhat.jpg" />
+    <Content Include="images\aozaratim.jpg" />
+    <Content Include="images\curvejeanblackowst.jpg" />
+    <Content Include="images\hinhnen.gif" />
+    <Content Include="images\jeanregularfitnavy.jpg" />
+    <Content Include="images\jeanslimfitblue.jpg" />
+    <Content Include="images\quandeepsealider.jpg" />
+    <Content Include="images\quandryshortnavy.jpg" />
+    <Content Include="images\quanjoggerowstblack.jpg" />
+    <Content Include="images\quanjoggerowstdarkgray.jpg" />
+    <Content Include="images\quanlacvietowst.jpg" />
+    <Content Include="images\quanshortlidertrang.jpg" />
+    <Content Include="images\quantaybeuniqlo.jpg" />
+    <Content Include="images\shortowstblack.jpg" />
+    <Content Include="images\shortowstgray.jpg" />
+    <Content Include="images\tomjeanlider.jpg" />
+    <Content Include="images\TuiHoaTietCam.jpg" />
+    <Content Include="images\TuiHoaTietDen.jpg" />
+    <Content Include="images\TuiHoaTietTrang.jpg" />
+    <Content Include="images\TuiKhongHoaTiet.jpg" />
+    <Content Include="images\unclejeanlider.jpg" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 

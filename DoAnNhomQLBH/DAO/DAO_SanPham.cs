@@ -21,10 +21,10 @@ namespace DoAnNhomQLBH.DAO
                 s.DonGia,
                 s.LoaiSP.TenLoaiSP,
                 s.HinhSP,
-                s.SoLuong
+                s.SoLuong 
             }).ToList();
             return ds;
-        }
+        } 
         public dynamic LayDSMLSP()
         {
             var ds = db.LoaiSPs.Select(s => new {
