@@ -63,5 +63,42 @@ namespace DoAnNhomQLBH
             }
             return 0;
         }
+
+        private void chkSavePw_CheckedChanged(object sender, EventArgs e)
+        {
+            if(txtPass.Text != "" && txtUserName.Text != "")
+            {
+                if(chkSavePw.Checked == true)
+                {
+                    string users = txtUserName.Text;
+                    string pw = txtPass.Text;
+                    Properties.Settings.Default.username = users;
+                    Properties.Settings.Default.password = pw;
+                    Properties.Settings.Default.Save();
+                }else
+                {
+                    Properties.Settings.Default.Reset();
+                }
+            }
+        }
+
+        private void FormDangNhap_Load(object sender, EventArgs e)
+        {
+            txtUserName.Text = Properties.Settings.Default.username;
+            txtPass.Text = Properties.Settings.Default.password;
+            
+            if (Properties.Settings.Default.username != "")
+            {
+                Properties.Settings.Default.Reset();
+            }
+        }
+
+        private void btDangKy_Click(object sender, EventArgs e)
+        {
+            FDangKy f = new FDangKy();
+            this.Hide();
+            f.ShowDialog();
+           
+        }
     }
 }

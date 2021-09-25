@@ -39,3 +39,4 @@ C:\Users\pc\Desktop\DoAnNhomQLBH\DoAnNhomQLBH\obj\Debug\DoAnNhomQLBH.FSanPham.re
 C:\Users\pc\Desktop\DoAnNhomQLBH\DoAnNhomQLBH\obj\Debug\DoAnNhomQLBH.FDatHang.resources
 C:\Users\pc\Desktop\DoAnNhomQLBH\DoAnNhomQLBH\obj\Debug\DoAnNhomQLBH.csprojResolveAssemblyReference.cache
 C:\Users\Admin\Desktop\New folder\DoAnNhomQLBH\DoAnNhomQLBH\obj\Debug\DoAnNhomQLBH.FDatHang.resources
+C:\Users\pc\Desktop\DoAnNhomQLBH\DoAnNhomQLBH\obj\Debug\DoAnNhomQLBH.FDangKy.resources
