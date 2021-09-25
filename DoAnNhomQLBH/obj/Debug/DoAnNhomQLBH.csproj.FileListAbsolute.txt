@@ -39,7 +39,6 @@ C:\Users\pc\Desktop\DoAnNhomQLBH\DoAnNhomQLBH\obj\Debug\DoAnNhomQLBH.FSanPham.re
 C:\Users\pc\Desktop\DoAnNhomQLBH\DoAnNhomQLBH\obj\Debug\DoAnNhomQLBH.FDatHang.resources
 C:\Users\pc\Desktop\DoAnNhomQLBH\DoAnNhomQLBH\obj\Debug\DoAnNhomQLBH.csprojResolveAssemblyReference.cache
 C:\Users\Admin\Desktop\New folder\DoAnNhomQLBH\DoAnNhomQLBH\obj\Debug\DoAnNhomQLBH.FDatHang.resources
-<<<<<<< HEAD
 D:\LapTrinhCoSoDuLieu\DoAnNhom\QLBH3\DoAnNhomQLBH\DoAnNhomQLBH\bin\Debug\DoAnNhomQLBH.exe.config
 D:\LapTrinhCoSoDuLieu\DoAnNhom\QLBH3\DoAnNhomQLBH\DoAnNhomQLBH\obj\Debug\DoAnNhomQLBH.exe
 D:\LapTrinhCoSoDuLieu\DoAnNhom\QLBH3\DoAnNhomQLBH\DoAnNhomQLBH\obj\Debug\DoAnNhomQLBH.pdb
@@ -60,6 +59,5 @@ D:\LapTrinhCoSoDuLieu\DoAnNhom\QLBH3\DoAnNhomQLBH\DoAnNhomQLBH\obj\Debug\DoAnNho
 D:\LapTrinhCoSoDuLieu\DoAnNhom\QLBH3\DoAnNhomQLBH\DoAnNhomQLBH\obj\Debug\DoAnNhomQLBH.FSanPham.resources
 D:\LapTrinhCoSoDuLieu\DoAnNhom\QLBH3\DoAnNhomQLBH\DoAnNhomQLBH\obj\Debug\DoAnNhomQLBH.Properties.Resources.resources
 D:\LapTrinhCoSoDuLieu\DoAnNhom\QLBH3\DoAnNhomQLBH\DoAnNhomQLBH\obj\Debug\DoAnNhomQLBH.csproj.GenerateResource.Cache
-=======
 C:\Users\pc\Desktop\DoAnNhomQLBH\DoAnNhomQLBH\obj\Debug\DoAnNhomQLBH.FDangKy.resources
->>>>>>> 0c40868a306e886dd51eb9b109133de942f0f06d
+D:\LapTrinhCoSoDuLieu\DoAnNhom\QLBH3\DoAnNhomQLBH\DoAnNhomQLBH\obj\Debug\DoAnNhomQLBH.FDangKy.resources

@@ -53,6 +53,7 @@ namespace DoAnNhomQLBH
                 cbMaLSP.Text = dGSP.Rows[e.RowIndex].Cells[3].Value.ToString();
                 txtHinh.Text = dGSP.Rows[e.RowIndex].Cells["HinhSP"].Value.ToString();
                 txtSoLuong.Text = dGSP.Rows[e.RowIndex].Cells["SoLuong"].Value.ToString();
+                pictureBox1.Image = Image.FromFile("../../" + dGSP.Rows[e.RowIndex].Cells["HinhSP"].Value.ToString());
             }
         }
 
