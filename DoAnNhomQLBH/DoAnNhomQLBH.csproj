@@ -216,12 +216,62 @@
     <None Include="QLBanHangEF.edmx.diagram">
       <DependentUpon>QLBanHangEF.edmx</DependentUpon>
     </None>
-    <None Include="Resources\avtnam.png" />
   </ItemGroup>
   <ItemGroup>
     <Service Include="{508349B6-6B84-4DF5-91F0-309BEEBAD82D}" />
   </ItemGroup>
   <ItemGroup>
+    <Content Include="images\0912hoodiewashedbe.jpg" />
+    <Content Include="images\0912hoodiewashedblack.jpg" />
+    <Content Include="images\0912logohoodiewashed.jpg" />
+    <Content Include="images\AoHoodieCam.jpg" />
+    <Content Include="images\AoHoodieDen.jpg" />
+    <Content Include="images\AoHoodieXam.jpg" />
+    <Content Include="images\aopolosocgray.jpg" />
+    <Content Include="images\aopoloxanh.jpg" />
+    <Content Include="images\AoSoMiCaRoDo.jpg" />
+    <Content Include="images\aosomicarongantaytrang.jpg" />
+    <Content Include="images\aosomicarongantayvang.jpg" />
+    <Content Include="images\AoSoMiCaRoVang.jpg" />
+    <Content Include="images\AoThunCam.jpg" />
+    <Content Include="images\AoThunDen.jpg" />
+    <Content Include="images\AoThunNau.jpg" />
+    <Content Include="images\AoThunNauNhat.jpg" />
+    <Content Include="images\AoThunTrang.jpg" />
+    <Content Include="images\AoThunXam.jpg" />
+    <Content Include="images\AoThunXam2.jpg" />
+    <Content Include="images\AoThunXamNhat.jpg" />
+    <Content Include="images\AoThunXanhLa.jpg" />
+    <Content Include="images\aoutandyxam.jpg" />
+    <Content Include="images\aoutanimalnavy.jpg" />
+    <Content Include="images\aoutanimaltrang.jpg" />
+    <Content Include="images\aoutanimalxanh.jpg" />
+    <Content Include="images\aoutmarvel.jpg" />
+    <Content Include="images\aoutmonsterbe.jpg" />
+    <Content Include="images\aoutpeanutbe.jpg" />
+    <Content Include="images\aoutthebrandsden.jpg" />
+    <Content Include="images\aozaraden.jpg" />
+    <Content Include="images\aozaranaunhat.jpg" />
+    <Content Include="images\aozaratim.jpg" />
+    <Content Include="images\curvejeanblackowst.jpg" />
+    <Content Include="images\hinhnen.gif" />
+    <Content Include="images\jeanregularfitnavy.jpg" />
+    <Content Include="images\jeanslimfitblue.jpg" />
+    <Content Include="images\quandeepsealider.jpg" />
+    <Content Include="images\quandryshortnavy.jpg" />
+    <Content Include="images\quanjoggerowstblack.jpg" />
+    <Content Include="images\quanjoggerowstdarkgray.jpg" />
+    <Content Include="images\quanlacvietowst.jpg" />
+    <Content Include="images\quanshortlidertrang.jpg" />
+    <Content Include="images\quantaybeuniqlo.jpg" />
+    <Content Include="images\shortowstblack.jpg" />
+    <Content Include="images\shortowstgray.jpg" />
+    <Content Include="images\tomjeanlider.jpg" />
+    <Content Include="images\TuiHoaTietCam.jpg" />
+    <Content Include="images\TuiHoaTietDen.jpg" />
+    <Content Include="images\TuiHoaTietTrang.jpg" />
+    <Content Include="images\TuiKhongHoaTiet.jpg" />
+    <Content Include="images\unclejeanlider.jpg" />
     <Content Include="QLBanHangEF.Context.tt">
       <Generator>TextTemplatingFileGenerator</Generator>
       <DependentUpon>QLBanHangEF.edmx</DependentUpon>
@@ -232,6 +282,8 @@
       <DependentUpon>QLBanHangEF.edmx</DependentUpon>
       <LastGenOutput>QLBanHangEF.cs</LastGenOutput>
     </Content>
+    <Content Include="Resources\avtnam.png" />
+    <Content Include="Resources\avtnu.jpg" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
