@@ -49,6 +49,18 @@ namespace DoAnNhomQLBH
                 txtDiaChi.Text = dGKhachHang.Rows[e.RowIndex].Cells["DiaChi"].Value.ToString();
                 txtEmail.Text = dGKhachHang.Rows[e.RowIndex].Cells["Email"].Value.ToString();
                 txtFax.Text = dGKhachHang.Rows[e.RowIndex].Cells["Fax"].Value.ToString();
+                string method = txtGioiTinh.Text.ToString();
+                switch (method.Trim())
+                {
+                    case "Nam":
+                        pictureBox1.Image = null;
+                        pictureBox1.Image = Image.FromFile("../../Resources/avtnam.png");
+                        break;
+                    case "Nữ":
+                        pictureBox1.Image = null;
+                        pictureBox1.Image = Image.FromFile("../../Resources/avtnu.jpg");
+                        break;
+                }
             }
         }
 

@@ -53,13 +53,13 @@
             this.bindingNavigatorAddNewItem = new System.Windows.Forms.ToolStripButton();
             this.bindingNavigatorDeleteItem = new System.Windows.Forms.ToolStripButton();
             this.groupBox2 = new System.Windows.Forms.GroupBox();
+            this.btThoat = new System.Windows.Forms.Button();
+            this.btTaoDonHang = new System.Windows.Forms.Button();
             this.btSua = new System.Windows.Forms.Button();
+            this.btThem = new System.Windows.Forms.Button();
             this.btXoa = new System.Windows.Forms.Button();
             this.groupBox3 = new System.Windows.Forms.GroupBox();
             this.dGSP = new System.Windows.Forms.DataGridView();
-            this.btThem = new System.Windows.Forms.Button();
-            this.btTaoDonHang = new System.Windows.Forms.Button();
-            this.btThoat = new System.Windows.Forms.Button();
             this.groupBox1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.numSoLuong)).BeginInit();
             this.groupBox2.SuspendLayout();
@@ -300,6 +300,28 @@
             this.groupBox2.TabIndex = 10;
             this.groupBox2.TabStop = false;
             // 
+            // btThoat
+            // 
+            this.btThoat.Location = new System.Drawing.Point(856, 17);
+            this.btThoat.Margin = new System.Windows.Forms.Padding(4);
+            this.btThoat.Name = "btThoat";
+            this.btThoat.Size = new System.Drawing.Size(137, 45);
+            this.btThoat.TabIndex = 5;
+            this.btThoat.Text = "Thoát";
+            this.btThoat.UseVisualStyleBackColor = true;
+            this.btThoat.Click += new System.EventHandler(this.btThoat_Click);
+            // 
+            // btTaoDonHang
+            // 
+            this.btTaoDonHang.Location = new System.Drawing.Point(28, 17);
+            this.btTaoDonHang.Margin = new System.Windows.Forms.Padding(4);
+            this.btTaoDonHang.Name = "btTaoDonHang";
+            this.btTaoDonHang.Size = new System.Drawing.Size(125, 45);
+            this.btTaoDonHang.TabIndex = 4;
+            this.btTaoDonHang.Text = "Đặt hàng";
+            this.btTaoDonHang.UseVisualStyleBackColor = true;
+            this.btTaoDonHang.Click += new System.EventHandler(this.btTaoDonHang_Click);
+            // 
             // btSua
             // 
             this.btSua.Location = new System.Drawing.Point(437, 17);
@@ -310,6 +332,17 @@
             this.btSua.Text = "Sửa";
             this.btSua.UseVisualStyleBackColor = true;
             // 
+            // btThem
+            // 
+            this.btThem.Location = new System.Drawing.Point(221, 17);
+            this.btThem.Margin = new System.Windows.Forms.Padding(4);
+            this.btThem.Name = "btThem";
+            this.btThem.Size = new System.Drawing.Size(140, 45);
+            this.btThem.TabIndex = 0;
+            this.btThem.Text = "Thêm";
+            this.btThem.UseVisualStyleBackColor = true;
+            this.btThem.Click += new System.EventHandler(this.btThem_Click);
+            // 
             // btXoa
             // 
             this.btXoa.Location = new System.Drawing.Point(648, 17);
@@ -319,6 +352,7 @@
             this.btXoa.TabIndex = 1;
             this.btXoa.Text = "Xóa";
             this.btXoa.UseVisualStyleBackColor = true;
+            this.btXoa.Click += new System.EventHandler(this.btXoa_Click);
             // 
             // groupBox3
             // 
@@ -341,39 +375,6 @@
             this.dGSP.RowTemplate.Height = 24;
             this.dGSP.Size = new System.Drawing.Size(997, 243);
             this.dGSP.TabIndex = 0;
-            // 
-            // btThem
-            // 
-            this.btThem.Location = new System.Drawing.Point(221, 17);
-            this.btThem.Margin = new System.Windows.Forms.Padding(4);
-            this.btThem.Name = "btThem";
-            this.btThem.Size = new System.Drawing.Size(140, 45);
-            this.btThem.TabIndex = 0;
-            this.btThem.Text = "Thêm";
-            this.btThem.UseVisualStyleBackColor = true;
-            this.btThem.Click += new System.EventHandler(this.btThem_Click);
-            // 
-            // btTaoDonHang
-            // 
-            this.btTaoDonHang.Location = new System.Drawing.Point(28, 17);
-            this.btTaoDonHang.Margin = new System.Windows.Forms.Padding(4);
-            this.btTaoDonHang.Name = "btTaoDonHang";
-            this.btTaoDonHang.Size = new System.Drawing.Size(125, 45);
-            this.btTaoDonHang.TabIndex = 4;
-            this.btTaoDonHang.Text = "Đặt hàng";
-            this.btTaoDonHang.UseVisualStyleBackColor = true;
-            this.btTaoDonHang.Click += new System.EventHandler(this.btTaoDonHang_Click);
-            // 
-            // btThoat
-            // 
-            this.btThoat.Location = new System.Drawing.Point(856, 17);
-            this.btThoat.Margin = new System.Windows.Forms.Padding(4);
-            this.btThoat.Name = "btThoat";
-            this.btThoat.Size = new System.Drawing.Size(137, 45);
-            this.btThoat.TabIndex = 5;
-            this.btThoat.Text = "Thoát";
-            this.btThoat.UseVisualStyleBackColor = true;
-            this.btThoat.Click += new System.EventHandler(this.btThoat_Click);
             // 
             // FDatHang
             // 

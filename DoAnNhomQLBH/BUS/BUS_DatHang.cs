@@ -52,8 +52,7 @@ namespace DoAnNhomQLBH.BUS
                 catch (Exception ex)
                 {
                     result = false; // chưa xử lý giao tác 
-                    MessageBox.Show(ex.Message);
-                    throw;
+                    MessageBox.Show("Sản phẩm đã tồn tại");
                 }
             }
             return result;

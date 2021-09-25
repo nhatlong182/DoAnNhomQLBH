@@ -125,5 +125,10 @@ namespace DoAnNhomQLBH
             else
                 MessageBox.Show("Đặt Hàng thất bại !");
         }
+
+        private void btXoa_Click(object sender, EventArgs e)
+        {
+            dGSP.DataSource = null;
+        }
     }
 }
