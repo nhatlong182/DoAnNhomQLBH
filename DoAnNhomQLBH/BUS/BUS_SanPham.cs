@@ -26,6 +26,10 @@ namespace DoAnNhomQLBH.BUS
         {
             dg.DataSource = daSP.LayDSSP();
         }
+        public void search(DataGridView dg,string tenSP)
+        {
+            dg.DataSource = daSP.search(tenSP);
+        }
         public List<SanPham> LayDSSanPham()
         {
             return daSP.LayDSSPReport();

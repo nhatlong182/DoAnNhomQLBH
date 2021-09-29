@@ -25,6 +25,12 @@ namespace DoAnNhomQLBH.DAO
             }).ToList();
             return ds;
         }
+        public dynamic search(string tenSP)
+        {
+
+            var ds = db.SanPhams.Where(s => s.TenSP.Contains(tenSP)).ToList();
+            return ds;
+        }
         public List<SanPham> LayDSSPReport()
         {
             var ds = db.SanPhams.Select(s => s).ToList();

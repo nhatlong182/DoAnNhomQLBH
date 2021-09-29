@@ -41,6 +41,7 @@
             this.bindingNavigatorAddNewItem = new System.Windows.Forms.ToolStripButton();
             this.bindingNavigatorDeleteItem = new System.Windows.Forms.ToolStripButton();
             this.groupBox2 = new System.Windows.Forms.GroupBox();
+            this.txtSearch = new System.Windows.Forms.TextBox();
             this.btSearch = new System.Windows.Forms.Button();
             this.btXoa = new System.Windows.Forms.Button();
             this.btSua = new System.Windows.Forms.Button();
@@ -64,7 +65,6 @@
             this.label6 = new System.Windows.Forms.Label();
             this.label7 = new System.Windows.Forms.Label();
             this.label8 = new System.Windows.Forms.Label();
-            this.txtSearch = new System.Windows.Forms.TextBox();
             this.groupBox2.SuspendLayout();
             this.groupBox3.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.dGNhanVien)).BeginInit();
@@ -180,6 +180,15 @@
             this.groupBox2.TabIndex = 14;
             this.groupBox2.TabStop = false;
             // 
+            // txtSearch
+            // 
+            this.txtSearch.Location = new System.Drawing.Point(473, 20);
+            this.txtSearch.Margin = new System.Windows.Forms.Padding(4);
+            this.txtSearch.Multiline = true;
+            this.txtSearch.Name = "txtSearch";
+            this.txtSearch.Size = new System.Drawing.Size(221, 28);
+            this.txtSearch.TabIndex = 24;
+            // 
             // btSearch
             // 
             this.btSearch.ForeColor = System.Drawing.Color.Blue;
@@ -190,6 +199,7 @@
             this.btSearch.TabIndex = 10;
             this.btSearch.Text = "Tìm kiếm";
             this.btSearch.UseVisualStyleBackColor = true;
+            this.btSearch.Click += new System.EventHandler(this.btSearch_Click);
             // 
             // btXoa
             // 
@@ -431,15 +441,6 @@
             this.label8.Size = new System.Drawing.Size(51, 17);
             this.label8.TabIndex = 8;
             this.label8.Text = "Admin:";
-            // 
-            // txtSearch
-            // 
-            this.txtSearch.Location = new System.Drawing.Point(473, 20);
-            this.txtSearch.Margin = new System.Windows.Forms.Padding(4);
-            this.txtSearch.Multiline = true;
-            this.txtSearch.Name = "txtSearch";
-            this.txtSearch.Size = new System.Drawing.Size(221, 28);
-            this.txtSearch.TabIndex = 24;
             // 
             // FNhanVien
             // 

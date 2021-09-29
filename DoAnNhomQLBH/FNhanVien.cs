@@ -182,5 +182,11 @@ namespace DoAnNhomQLBH
                 MessageBox.Show("Xóa nhân viên thất bại !");
             }
         }
+
+        private void btSearch_Click(object sender, EventArgs e)
+        {
+            string tenNV = txtSearch.Text;
+            buNV.search(dGNhanVien, tenNV);
+        }
     }
 }

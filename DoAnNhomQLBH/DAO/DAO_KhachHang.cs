@@ -27,6 +27,12 @@ namespace DoAnNhomQLBH.DAO
             }).ToList();
             return ds;
         }
+        public dynamic search(string tenKH)
+        {
+
+            var ds = db.KhachHangs.Where(s => s.TenKH.Contains(tenKH)).ToList();
+            return ds;
+        }
         public void themKH(KhachHang k)
         {
             db.KhachHangs.Add(k);

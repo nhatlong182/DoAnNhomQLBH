@@ -59,12 +59,12 @@
             this.label7 = new System.Windows.Forms.Label();
             this.label8 = new System.Windows.Forms.Label();
             this.groupBox1 = new System.Windows.Forms.GroupBox();
+            this.txtSearch = new System.Windows.Forms.TextBox();
             this.btSearch = new System.Windows.Forms.Button();
             this.btDelete = new System.Windows.Forms.Button();
             this.btEdit = new System.Windows.Forms.Button();
             this.btExit = new System.Windows.Forms.Button();
             this.btInsert = new System.Windows.Forms.Button();
-            this.textBox1 = new System.Windows.Forms.TextBox();
             this.groupBox3.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.dGKhachHang)).BeginInit();
             this.groupBox2.SuspendLayout();
@@ -357,7 +357,7 @@
             // 
             // groupBox1
             // 
-            this.groupBox1.Controls.Add(this.textBox1);
+            this.groupBox1.Controls.Add(this.txtSearch);
             this.groupBox1.Controls.Add(this.btSearch);
             this.groupBox1.Controls.Add(this.btDelete);
             this.groupBox1.Controls.Add(this.btEdit);
@@ -372,6 +372,15 @@
             this.groupBox1.TabIndex = 13;
             this.groupBox1.TabStop = false;
             // 
+            // txtSearch
+            // 
+            this.txtSearch.Location = new System.Drawing.Point(508, 20);
+            this.txtSearch.Margin = new System.Windows.Forms.Padding(4);
+            this.txtSearch.Multiline = true;
+            this.txtSearch.Name = "txtSearch";
+            this.txtSearch.Size = new System.Drawing.Size(240, 30);
+            this.txtSearch.TabIndex = 24;
+            // 
             // btSearch
             // 
             this.btSearch.ForeColor = System.Drawing.Color.Blue;
@@ -382,6 +391,7 @@
             this.btSearch.TabIndex = 10;
             this.btSearch.Text = "Tìm kiếm";
             this.btSearch.UseVisualStyleBackColor = true;
+            this.btSearch.Click += new System.EventHandler(this.btSearch_Click);
             // 
             // btDelete
             // 
@@ -430,15 +440,6 @@
             this.btInsert.Text = "Thêm";
             this.btInsert.UseVisualStyleBackColor = true;
             this.btInsert.Click += new System.EventHandler(this.btInsert_Click);
-            // 
-            // textBox1
-            // 
-            this.textBox1.Location = new System.Drawing.Point(508, 20);
-            this.textBox1.Margin = new System.Windows.Forms.Padding(4);
-            this.textBox1.Multiline = true;
-            this.textBox1.Name = "textBox1";
-            this.textBox1.Size = new System.Drawing.Size(240, 30);
-            this.textBox1.TabIndex = 24;
             // 
             // FKhachHang
             // 
@@ -503,6 +504,6 @@
         private System.Windows.Forms.Button btInsert;
         private System.Windows.Forms.TextBox txtFax;
         private System.Windows.Forms.Label label8;
-        private System.Windows.Forms.TextBox textBox1;
+        private System.Windows.Forms.TextBox txtSearch;
     }
 }

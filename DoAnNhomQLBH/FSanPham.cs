@@ -73,7 +73,7 @@ namespace DoAnNhomQLBH
             s.MaLoaiSP = Int32.Parse(cbMaLSP.SelectedValue.ToString());
             s.HinhSP = txtHinh.Text;
 
-            File.Copy(duongDan, Path.Combine(@"C:\Users\Admin\Desktop\bt_winform\DoAnNhomQLBH\DoAnNhomQLBH\images\",
+            File.Copy(duongDan, Path.Combine(@"..\..\images\",
                 Path.GetFileName(duongDan)), true);
 
             if (buSP.themSanPham(s))
@@ -126,7 +126,7 @@ namespace DoAnNhomQLBH
             s.MaLoaiSP = Int32.Parse(cbMaLSP.SelectedValue.ToString());
             s.HinhSP = txtHinh.Text;
 
-            File.Copy(duongDan, Path.Combine(@"C:\Users\Admin\Desktop\bt_winform\DoAnNhomQLBH\DoAnNhomQLBH\images\",
+            File.Copy(duongDan, Path.Combine(@"..\..\images\",
                 Path.GetFileName(duongDan)), true);
 
             if (buSP.suaSanPham(s))
@@ -207,6 +207,12 @@ namespace DoAnNhomQLBH
             
             pictureBox1.Image = Image.FromFile(duongDan);
             txtHinh.Text = "images/" + tenHinh.ToString();
+        }
+
+        private void btSearch_Click(object sender, EventArgs e)
+        {
+            string tenSP = txtSearch.Text;
+            buSP.search(dGSP,tenSP);
         }
     }
 }

@@ -19,6 +19,10 @@ namespace DoAnNhomQLBH.BUS
         {
             dg.DataSource = daNV.LayDSNV();
         }
+        public void search(DataGridView dg, string tenNV)
+        {
+            dg.DataSource = daNV.search(tenNV);
+        }
         public bool themNhanVien(Nhanvien n)
         {
             try

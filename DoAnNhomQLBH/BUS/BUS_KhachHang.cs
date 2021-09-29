@@ -19,6 +19,10 @@ namespace DoAnNhomQLBH.BUS
         {
             dg.DataSource = daKH.LayDSKH();
         }
+        public void search(DataGridView dg, string tenKH)
+        {
+            dg.DataSource = daKH.search(tenKH);
+        }
         public bool themKhachHang(KhachHang k)
         {
             try {

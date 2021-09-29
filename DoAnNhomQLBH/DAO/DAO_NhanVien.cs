@@ -27,6 +27,12 @@ namespace DoAnNhomQLBH.DAO
             }).ToList();
             return ds;
         }
+        public dynamic search(string tenNV)
+        {
+
+            var ds = db.Nhanviens.Where(s => s.HoTenNV.Contains(tenNV)).ToList();
+            return ds;
+        }
         public void themNV(Nhanvien n)
         {
             db.Nhanviens.Add(n);

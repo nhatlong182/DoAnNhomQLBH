@@ -182,5 +182,11 @@ namespace DoAnNhomQLBH
                 MessageBox.Show("Sửa khách hàng thất bại !");
             }
         }
+
+        private void btSearch_Click(object sender, EventArgs e)
+        {
+            string tenKH = txtSearch.Text;
+            buKH.search(dGKhachHang, tenKH);
+        }
     }
 }
