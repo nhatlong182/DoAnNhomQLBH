@@ -9,12 +9,14 @@ using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
 using DoAnNhomQLBH.Report;
+using System.IO;
 
 namespace DoAnNhomQLBH
 {
     public partial class FSanPham : Form
     {
         BUS_SanPham buSP;
+        string duongDan;
         public FSanPham()
         {
             buSP = new BUS_SanPham();
@@ -71,13 +73,13 @@ namespace DoAnNhomQLBH
             s.MaLoaiSP = Int32.Parse(cbMaLSP.SelectedValue.ToString());
             s.HinhSP = txtHinh.Text;
 
+            File.Copy(duongDan, Path.Combine(@"C:\Users\Admin\Desktop\bt_winform\DoAnNhomQLBH\DoAnNhomQLBH\images\",
+                Path.GetFileName(duongDan)), true);
+
             if (buSP.themSanPham(s))
             {
-                if (string.IsNullOrWhiteSpace(txtMaSP.Text))
-                {
-                    MessageBox.Show("Bạn chưa nhập mã sản phẩm", "Thông báo", MessageBoxButtons.OK, MessageBoxIcon.Error);
-                }
-                else if (string.IsNullOrWhiteSpace(txtTenSP.Text))
+                
+                if (string.IsNullOrWhiteSpace(txtTenSP.Text))
                 {
                     MessageBox.Show("Bạn chưa nhập tên sản phẩm", "Thông báo", MessageBoxButtons.OK, MessageBoxIcon.Error);
                 }
@@ -123,6 +125,9 @@ namespace DoAnNhomQLBH
             s.SoLuong = Int32.Parse(txtSoLuong.Text);
             s.MaLoaiSP = Int32.Parse(cbMaLSP.SelectedValue.ToString());
             s.HinhSP = txtHinh.Text;
+
+            File.Copy(duongDan, Path.Combine(@"C:\Users\Admin\Desktop\bt_winform\DoAnNhomQLBH\DoAnNhomQLBH\images\",
+                Path.GetFileName(duongDan)), true);
 
             if (buSP.suaSanPham(s))
             {
@@ -190,6 +195,18 @@ namespace DoAnNhomQLBH
             f.crystalReportViewer1.ReportSource = r;
 
             f.Show();
+        }
+
+        private void btHinh_Click(object sender, EventArgs e)
+        {
+            openFileDialog1.ShowDialog();
+            duongDan = openFileDialog1.FileName;
+            string tenHinh = Path.GetFileName(duongDan);
+
+
+            
+            pictureBox1.Image = Image.FromFile(duongDan);
+            txtHinh.Text = "images/" + tenHinh.ToString();
         }
     }
 }
