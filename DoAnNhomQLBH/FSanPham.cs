@@ -8,6 +8,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
+using DoAnNhomQLBH.Report;
 
 namespace DoAnNhomQLBH
 {
@@ -180,9 +181,15 @@ namespace DoAnNhomQLBH
             }
         }
 
-        private void txtMaSP_TextChanged(object sender, EventArgs e)
-        {
 
+        private void btReport_Click(object sender, EventArgs e)
+        {
+            CRSanPham r = new CRSanPham();
+            FReport f = new FReport();
+            r.SetDataSource(buSP.LayDSSanPham().ToList());
+            f.crystalReportViewer1.ReportSource = r;
+
+            f.Show();
         }
     }
 }

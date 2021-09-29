@@ -49,7 +49,7 @@ namespace DoAnNhomQLBH.BUS
                     tran.Complete();
                     result = true;
                 }
-                catch (Exception ex)
+                catch (Exception)
                 {
                     result = false; // chưa xử lý giao tác 
                     MessageBox.Show("Sản phẩm đã tồn tại");

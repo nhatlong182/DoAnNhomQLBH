@@ -26,6 +26,10 @@ namespace DoAnNhomQLBH.BUS
         {
             dg.DataSource = daSP.LayDSSP();
         }
+        public List<SanPham> LayDSSanPham()
+        {
+            return daSP.LayDSSPReport();
+        }
         public void HienThiDSSP(ComboBox cb)
         {
             cb.DataSource = daSP.LayDSSP();

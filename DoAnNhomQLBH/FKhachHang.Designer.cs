@@ -63,9 +63,8 @@
             this.btDelete = new System.Windows.Forms.Button();
             this.btEdit = new System.Windows.Forms.Button();
             this.btExit = new System.Windows.Forms.Button();
-            this.button3 = new System.Windows.Forms.Button();
-            this.btSave = new System.Windows.Forms.Button();
             this.btInsert = new System.Windows.Forms.Button();
+            this.textBox1 = new System.Windows.Forms.TextBox();
             this.groupBox3.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.dGKhachHang)).BeginInit();
             this.groupBox2.SuspendLayout();
@@ -358,12 +357,11 @@
             // 
             // groupBox1
             // 
+            this.groupBox1.Controls.Add(this.textBox1);
             this.groupBox1.Controls.Add(this.btSearch);
             this.groupBox1.Controls.Add(this.btDelete);
             this.groupBox1.Controls.Add(this.btEdit);
             this.groupBox1.Controls.Add(this.btExit);
-            this.groupBox1.Controls.Add(this.button3);
-            this.groupBox1.Controls.Add(this.btSave);
             this.groupBox1.Controls.Add(this.btInsert);
             this.groupBox1.Dock = System.Windows.Forms.DockStyle.Bottom;
             this.groupBox1.Location = new System.Drawing.Point(0, 589);
@@ -377,10 +375,10 @@
             // btSearch
             // 
             this.btSearch.ForeColor = System.Drawing.Color.Blue;
-            this.btSearch.Location = new System.Drawing.Point(572, 20);
+            this.btSearch.Location = new System.Drawing.Point(766, 20);
             this.btSearch.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.btSearch.Name = "btSearch";
-            this.btSearch.Size = new System.Drawing.Size(105, 31);
+            this.btSearch.Size = new System.Drawing.Size(130, 31);
             this.btSearch.TabIndex = 10;
             this.btSearch.Text = "Tìm kiếm";
             this.btSearch.UseVisualStyleBackColor = true;
@@ -388,7 +386,7 @@
             // btDelete
             // 
             this.btDelete.ForeColor = System.Drawing.Color.Blue;
-            this.btDelete.Location = new System.Drawing.Point(300, 20);
+            this.btDelete.Location = new System.Drawing.Point(352, 20);
             this.btDelete.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.btDelete.Name = "btDelete";
             this.btDelete.Size = new System.Drawing.Size(101, 31);
@@ -400,10 +398,10 @@
             // btEdit
             // 
             this.btEdit.ForeColor = System.Drawing.Color.Blue;
-            this.btEdit.Location = new System.Drawing.Point(168, 20);
+            this.btEdit.Location = new System.Drawing.Point(196, 20);
             this.btEdit.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.btEdit.Name = "btEdit";
-            this.btEdit.Size = new System.Drawing.Size(101, 31);
+            this.btEdit.Size = new System.Drawing.Size(111, 31);
             this.btEdit.TabIndex = 8;
             this.btEdit.Text = "Sửa";
             this.btEdit.UseVisualStyleBackColor = true;
@@ -412,7 +410,7 @@
             // btExit
             // 
             this.btExit.ForeColor = System.Drawing.Color.Blue;
-            this.btExit.Location = new System.Drawing.Point(882, 18);
+            this.btExit.Location = new System.Drawing.Point(951, 20);
             this.btExit.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.btExit.Name = "btExit";
             this.btExit.Size = new System.Drawing.Size(100, 31);
@@ -421,39 +419,26 @@
             this.btExit.UseVisualStyleBackColor = true;
             this.btExit.Click += new System.EventHandler(this.btExit_Click);
             // 
-            // button3
-            // 
-            this.button3.ForeColor = System.Drawing.Color.Blue;
-            this.button3.Location = new System.Drawing.Point(712, 20);
-            this.button3.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
-            this.button3.Name = "button3";
-            this.button3.Size = new System.Drawing.Size(128, 31);
-            this.button3.TabIndex = 5;
-            this.button3.Text = "Hiển thị DS";
-            this.button3.UseVisualStyleBackColor = true;
-            // 
-            // btSave
-            // 
-            this.btSave.ForeColor = System.Drawing.Color.Blue;
-            this.btSave.Location = new System.Drawing.Point(432, 20);
-            this.btSave.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
-            this.btSave.Name = "btSave";
-            this.btSave.Size = new System.Drawing.Size(107, 31);
-            this.btSave.TabIndex = 4;
-            this.btSave.Text = "Cập nhật";
-            this.btSave.UseVisualStyleBackColor = true;
-            // 
             // btInsert
             // 
             this.btInsert.ForeColor = System.Drawing.Color.Blue;
-            this.btInsert.Location = new System.Drawing.Point(36, 18);
+            this.btInsert.Location = new System.Drawing.Point(36, 19);
             this.btInsert.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.btInsert.Name = "btInsert";
-            this.btInsert.Size = new System.Drawing.Size(105, 31);
+            this.btInsert.Size = new System.Drawing.Size(114, 31);
             this.btInsert.TabIndex = 3;
             this.btInsert.Text = "Thêm";
             this.btInsert.UseVisualStyleBackColor = true;
             this.btInsert.Click += new System.EventHandler(this.btInsert_Click);
+            // 
+            // textBox1
+            // 
+            this.textBox1.Location = new System.Drawing.Point(508, 20);
+            this.textBox1.Margin = new System.Windows.Forms.Padding(4);
+            this.textBox1.Multiline = true;
+            this.textBox1.Name = "textBox1";
+            this.textBox1.Size = new System.Drawing.Size(240, 30);
+            this.textBox1.TabIndex = 24;
             // 
             // FKhachHang
             // 
@@ -474,6 +459,7 @@
             this.groupBox2.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
             this.groupBox1.ResumeLayout(false);
+            this.groupBox1.PerformLayout();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -514,10 +500,9 @@
         private System.Windows.Forms.Button btDelete;
         private System.Windows.Forms.Button btEdit;
         private System.Windows.Forms.Button btExit;
-        private System.Windows.Forms.Button button3;
-        private System.Windows.Forms.Button btSave;
         private System.Windows.Forms.Button btInsert;
         private System.Windows.Forms.TextBox txtFax;
         private System.Windows.Forms.Label label8;
+        private System.Windows.Forms.TextBox textBox1;
     }
 }

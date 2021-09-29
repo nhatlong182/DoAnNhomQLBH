@@ -25,6 +25,11 @@ namespace DoAnNhomQLBH.DAO
             }).ToList();
             return ds;
         }
+        public List<SanPham> LayDSSPReport()
+        {
+            var ds = db.SanPhams.Select(s => s).ToList();
+            return ds;
+        }
         public dynamic LayDSMLSP()
         {
             var ds = db.LoaiSPs.Select(s => new {

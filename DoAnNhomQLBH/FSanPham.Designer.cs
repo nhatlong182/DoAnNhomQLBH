@@ -62,11 +62,11 @@
             this.btXoa = new System.Windows.Forms.Button();
             this.btSua = new System.Windows.Forms.Button();
             this.btDong = new System.Windows.Forms.Button();
-            this.button3 = new System.Windows.Forms.Button();
-            this.btLuu = new System.Windows.Forms.Button();
+            this.btReport = new System.Windows.Forms.Button();
             this.btThem = new System.Windows.Forms.Button();
             this.groupBox3 = new System.Windows.Forms.GroupBox();
             this.dGSP = new System.Windows.Forms.DataGridView();
+            this.txtSearch = new System.Windows.Forms.TextBox();
             this.groupBox1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             this.groupBox2.SuspendLayout();
@@ -138,9 +138,9 @@
             this.groupBox1.Controls.Add(this.ngaySinhLabel);
             this.groupBox1.Controls.Add(this.dienThoaiLabel);
             this.groupBox1.Location = new System.Drawing.Point(13, 98);
-            this.groupBox1.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.groupBox1.Margin = new System.Windows.Forms.Padding(4);
             this.groupBox1.Name = "groupBox1";
-            this.groupBox1.Padding = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.groupBox1.Padding = new System.Windows.Forms.Padding(4);
             this.groupBox1.Size = new System.Drawing.Size(977, 212);
             this.groupBox1.TabIndex = 1;
             this.groupBox1.TabStop = false;
@@ -149,7 +149,7 @@
             // txtSoLuong
             // 
             this.txtSoLuong.Location = new System.Drawing.Point(156, 135);
-            this.txtSoLuong.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.txtSoLuong.Margin = new System.Windows.Forms.Padding(4);
             this.txtSoLuong.Name = "txtSoLuong";
             this.txtSoLuong.Size = new System.Drawing.Size(265, 22);
             this.txtSoLuong.TabIndex = 28;
@@ -198,7 +198,7 @@
             // txtHinh
             // 
             this.txtHinh.Location = new System.Drawing.Point(507, 34);
-            this.txtHinh.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.txtHinh.Margin = new System.Windows.Forms.Padding(4);
             this.txtHinh.Multiline = true;
             this.txtHinh.Name = "txtHinh";
             this.txtHinh.Size = new System.Drawing.Size(145, 52);
@@ -238,7 +238,7 @@
             // txtDonGia
             // 
             this.txtDonGia.Location = new System.Drawing.Point(156, 102);
-            this.txtDonGia.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.txtDonGia.Margin = new System.Windows.Forms.Padding(4);
             this.txtDonGia.Name = "txtDonGia";
             this.txtDonGia.Size = new System.Drawing.Size(265, 22);
             this.txtDonGia.TabIndex = 12;
@@ -257,7 +257,7 @@
             // txtTenSP
             // 
             this.txtTenSP.Location = new System.Drawing.Point(156, 64);
-            this.txtTenSP.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.txtTenSP.Margin = new System.Windows.Forms.Padding(4);
             this.txtTenSP.Name = "txtTenSP";
             this.txtTenSP.Size = new System.Drawing.Size(265, 22);
             this.txtTenSP.TabIndex = 10;
@@ -266,11 +266,10 @@
             // 
             this.txtMaSP.Enabled = false;
             this.txtMaSP.Location = new System.Drawing.Point(156, 32);
-            this.txtMaSP.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.txtMaSP.Margin = new System.Windows.Forms.Padding(4);
             this.txtMaSP.Name = "txtMaSP";
             this.txtMaSP.Size = new System.Drawing.Size(265, 22);
             this.txtMaSP.TabIndex = 3;
-            this.txtMaSP.TextChanged += new System.EventHandler(this.txtMaSP_TextChanged);
             // 
             // bindingNavigatorMoveFirstItem
             // 
@@ -353,18 +352,18 @@
             // 
             // groupBox2
             // 
+            this.groupBox2.Controls.Add(this.txtSearch);
             this.groupBox2.Controls.Add(this.btSearch);
             this.groupBox2.Controls.Add(this.btXoa);
             this.groupBox2.Controls.Add(this.btSua);
             this.groupBox2.Controls.Add(this.btDong);
-            this.groupBox2.Controls.Add(this.button3);
-            this.groupBox2.Controls.Add(this.btLuu);
+            this.groupBox2.Controls.Add(this.btReport);
             this.groupBox2.Controls.Add(this.btThem);
             this.groupBox2.Dock = System.Windows.Forms.DockStyle.Bottom;
             this.groupBox2.Location = new System.Drawing.Point(0, 592);
-            this.groupBox2.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.groupBox2.Margin = new System.Windows.Forms.Padding(4);
             this.groupBox2.Name = "groupBox2";
-            this.groupBox2.Padding = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.groupBox2.Padding = new System.Windows.Forms.Padding(4);
             this.groupBox2.Size = new System.Drawing.Size(1019, 59);
             this.groupBox2.TabIndex = 10;
             this.groupBox2.TabStop = false;
@@ -372,7 +371,7 @@
             // btSearch
             // 
             this.btSearch.ForeColor = System.Drawing.Color.Blue;
-            this.btSearch.Location = new System.Drawing.Point(561, 20);
+            this.btSearch.Location = new System.Drawing.Point(782, 21);
             this.btSearch.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.btSearch.Name = "btSearch";
             this.btSearch.Size = new System.Drawing.Size(105, 31);
@@ -407,7 +406,7 @@
             // btDong
             // 
             this.btDong.ForeColor = System.Drawing.Color.Blue;
-            this.btDong.Location = new System.Drawing.Point(871, 18);
+            this.btDong.Location = new System.Drawing.Point(906, 21);
             this.btDong.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.btDong.Name = "btDong";
             this.btDong.Size = new System.Drawing.Size(100, 31);
@@ -416,27 +415,17 @@
             this.btDong.UseVisualStyleBackColor = true;
             this.btDong.Click += new System.EventHandler(this.btDong_Click);
             // 
-            // button3
+            // btReport
             // 
-            this.button3.ForeColor = System.Drawing.Color.Blue;
-            this.button3.Location = new System.Drawing.Point(701, 20);
-            this.button3.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
-            this.button3.Name = "button3";
-            this.button3.Size = new System.Drawing.Size(128, 31);
-            this.button3.TabIndex = 5;
-            this.button3.Text = "Hiển thị DS";
-            this.button3.UseVisualStyleBackColor = true;
-            // 
-            // btLuu
-            // 
-            this.btLuu.ForeColor = System.Drawing.Color.Blue;
-            this.btLuu.Location = new System.Drawing.Point(421, 20);
-            this.btLuu.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
-            this.btLuu.Name = "btLuu";
-            this.btLuu.Size = new System.Drawing.Size(107, 31);
-            this.btLuu.TabIndex = 4;
-            this.btLuu.Text = "Lưu";
-            this.btLuu.UseVisualStyleBackColor = true;
+            this.btReport.ForeColor = System.Drawing.Color.Blue;
+            this.btReport.Location = new System.Drawing.Point(405, 21);
+            this.btReport.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.btReport.Name = "btReport";
+            this.btReport.Size = new System.Drawing.Size(155, 31);
+            this.btReport.TabIndex = 5;
+            this.btReport.Text = "Report Sản Phẩm";
+            this.btReport.UseVisualStyleBackColor = true;
+            this.btReport.Click += new System.EventHandler(this.btReport_Click);
             // 
             // btThem
             // 
@@ -454,9 +443,9 @@
             // 
             this.groupBox3.Controls.Add(this.dGSP);
             this.groupBox3.Location = new System.Drawing.Point(13, 306);
-            this.groupBox3.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.groupBox3.Margin = new System.Windows.Forms.Padding(4);
             this.groupBox3.Name = "groupBox3";
-            this.groupBox3.Padding = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.groupBox3.Padding = new System.Windows.Forms.Padding(4);
             this.groupBox3.Size = new System.Drawing.Size(977, 295);
             this.groupBox3.TabIndex = 11;
             this.groupBox3.TabStop = false;
@@ -472,6 +461,14 @@
             this.dGSP.TabIndex = 0;
             this.dGSP.CellClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.dGSP_CellClick);
             // 
+            // txtSearch
+            // 
+            this.txtSearch.Location = new System.Drawing.Point(582, 23);
+            this.txtSearch.Multiline = true;
+            this.txtSearch.Name = "txtSearch";
+            this.txtSearch.Size = new System.Drawing.Size(184, 29);
+            this.txtSearch.TabIndex = 11;
+            // 
             // FSanPham
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
@@ -481,7 +478,7 @@
             this.Controls.Add(this.groupBox2);
             this.Controls.Add(this.groupBox1);
             this.Controls.Add(this.label1);
-            this.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.Margin = new System.Windows.Forms.Padding(4);
             this.Name = "FSanPham";
             this.Text = "Form Sản phẩm";
             this.Load += new System.EventHandler(this.FSanPham_Load);
@@ -489,6 +486,7 @@
             this.groupBox1.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
             this.groupBox2.ResumeLayout(false);
+            this.groupBox2.PerformLayout();
             this.groupBox3.ResumeLayout(false);
             ((System.ComponentModel.ISupportInitialize)(this.dGSP)).EndInit();
             this.ResumeLayout(false);
@@ -526,8 +524,7 @@
         private System.Windows.Forms.Button btXoa;
         private System.Windows.Forms.Button btSua;
         private System.Windows.Forms.Button btDong;
-        private System.Windows.Forms.Button button3;
-        private System.Windows.Forms.Button btLuu;
+        private System.Windows.Forms.Button btReport;
         private System.Windows.Forms.Button btThem;
         private System.Windows.Forms.Label label3;
         private System.Windows.Forms.Label label4;
@@ -538,5 +535,6 @@
         private System.Windows.Forms.ComboBox cbGiamGia;
         private System.Windows.Forms.TextBox txtSoLuong;
         private System.Windows.Forms.Label label5;
+        private System.Windows.Forms.TextBox txtSearch;
     }
 }
