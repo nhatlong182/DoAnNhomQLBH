@@ -71,14 +71,17 @@ namespace DoAnNhomQLBH
             s.DonGia = Int32.Parse(txtDonGia.Text);
             s.SoLuong = Int32.Parse(txtSoLuong.Text);
             s.MaLoaiSP = Int32.Parse(cbMaLSP.SelectedValue.ToString());
-            s.HinhSP = txtHinh.Text;
+            
 
-            File.Copy(duongDan, Path.Combine(@"..\..\images\",
-                Path.GetFileName(duongDan)), true);
+            if(!string.IsNullOrEmpty(duongDan))
+            {
+                File.Copy(duongDan, Path.Combine(@"../../images/", Path.GetFileName(duongDan)), true);
+                s.HinhSP = txtHinh.Text;
+            }
+
 
             if (buSP.themSanPham(s))
             {
-                
                 if (string.IsNullOrWhiteSpace(txtTenSP.Text))
                 {
                     MessageBox.Show("Bạn chưa nhập tên sản phẩm", "Thông báo", MessageBoxButtons.OK, MessageBoxIcon.Error);
@@ -95,7 +98,7 @@ namespace DoAnNhomQLBH
                 {
                     MessageBox.Show("Bạn chưa chọn mã loại sản phẩm", "Thông báo", MessageBoxButtons.OK, MessageBoxIcon.Error);
                 }
-                else if (string.IsNullOrWhiteSpace(txtHinh.Text))
+                else if (string.IsNullOrWhiteSpace(duongDan))
                 {
                     MessageBox.Show("Bạn chưa chọn hình sản phẩm", "Thông báo", MessageBoxButtons.OK, MessageBoxIcon.Error);
                 }
@@ -126,8 +129,11 @@ namespace DoAnNhomQLBH
             s.MaLoaiSP = Int32.Parse(cbMaLSP.SelectedValue.ToString());
             s.HinhSP = txtHinh.Text;
 
-            File.Copy(duongDan, Path.Combine(@"../../images/",
-                Path.GetFileName(duongDan)), true);
+            if (openFileDialog1.Container != null)
+            {
+                File.Copy(duongDan, Path.Combine(@"../../images/", Path.GetFileName(duongDan)), true);
+                s.HinhSP = txtHinh.Text;
+            }
 
             if (buSP.suaSanPham(s))
             {
@@ -202,7 +208,6 @@ namespace DoAnNhomQLBH
             openFileDialog1.ShowDialog();
             duongDan = openFileDialog1.FileName;
             string tenHinh = Path.GetFileName(duongDan);
-
 
             
             pictureBox1.Image = Image.FromFile(duongDan);
