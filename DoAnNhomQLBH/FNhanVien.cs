@@ -22,6 +22,8 @@ namespace DoAnNhomQLBH
 
         private void FNhanVien_Load(object sender, EventArgs e)
         {
+            cbAdmin.Items.Add("True");
+            cbAdmin.Items.Add("False");
             buNV.LayDSNhanVien(dGNhanVien);
         }
         private void HienThiDSNV()
@@ -76,7 +78,16 @@ namespace DoAnNhomQLBH
             nv.Dienthoai = txtSdt.Text;
             nv.Diachi = txtDiaChi.Text;
             nv.Email = txtEmail.Text;
-            nv.Admin = false;
+            if (cbAdmin.SelectedItem.ToString() == "True")
+            {
+                nv.Admin = true;
+            }
+            else
+            {
+                nv.Admin = false;
+            }
+            if(buNV.isEmail(txtEmail.Text) == true)
+            {
             if (buNV.themNhanVien(nv))
             {
                 if (string.IsNullOrWhiteSpace(txtTenNV.Text))
@@ -106,14 +117,19 @@ namespace DoAnNhomQLBH
                 else
                 {
 
-                    MessageBox.Show("Thêm khách hàng thành công");
+                    MessageBox.Show("Thêm nhân viên thành công");
                     buNV.LayDSNhanVien(dGNhanVien);
                 }
 
             }
             else
             {
-                MessageBox.Show("Thêm khách hàng thất bại !");
+                MessageBox.Show("Thêm nhân viên thất bại !");
+
+            }
+            }else
+            {
+                MessageBox.Show("Email không hợp lệ !");
             }
         }
 
@@ -126,8 +142,17 @@ namespace DoAnNhomQLBH
             nv.NgaySinh = dtpNgaySinh.Value;
             nv.Dienthoai = txtSdt.Text;
             nv.Diachi = txtDiaChi.Text;
-            nv.Email = txtEmail.Text;
-            //nv.Admin = Convert.ToBoolean(cbAdmin.SelectedValue.ToString());
+            //nv.Admin = false;
+            if (cbAdmin.SelectedItem.ToString() == "True")
+            {
+                nv.Admin = true;
+            }
+            else
+            {
+                nv.Admin = false;
+            }
+            //nv.Admin = Convert.ToBoolean(cbAdmin.SelectedItem.ToString());
+
             if (buNV.suaNhanVien(nv))
             {
                 if (string.IsNullOrWhiteSpace(txtTenNV.Text))

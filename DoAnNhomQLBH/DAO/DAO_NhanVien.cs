@@ -33,10 +33,18 @@ namespace DoAnNhomQLBH.DAO
             var ds = db.Nhanviens.Where(s => s.HoTenNV.Contains(tenNV)).ToList();
             return ds;
         }
-        public void themNV(Nhanvien n)
+        public bool themNV(Nhanvien n)
         {
-            db.Nhanviens.Add(n);
-            db.SaveChanges();
+            Nhanvien mailNV = db.Nhanviens.Where(s => s.Email == n.Email).FirstOrDefault();
+            if (mailNV == null)
+            {
+                db.Nhanviens.Add(n);
+                db.SaveChanges();
+                return true;
+            }else
+            {
+                return false;
+            }
         }
         public void xoaNV(int maNV)
         {
@@ -52,7 +60,6 @@ namespace DoAnNhomQLBH.DAO
             nhanvien.GioiTinh = nv.GioiTinh;
             nhanvien.NgaySinh = nv.NgaySinh;
             nhanvien.Dienthoai = nv.Dienthoai;
-            nhanvien.Email = nv.Email;
             nhanvien.NgaySinh = nv.NgaySinh;
             nhanvien.Admin = nv.Admin;
             db.SaveChanges();
