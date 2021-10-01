@@ -75,7 +75,7 @@ namespace DoAnNhomQLBH
             oD.MaSP = cbMaSP.SelectedValue.ToString();
             oD.ThanhTien = Int32.Parse(txtThanhTien.Text);
             oD.Soluong = Int32.Parse(txtSoLuong.Text);
-            oD.Size = txtSize.Text;
+            
 
 
             buCT.suaCTDH(oD);

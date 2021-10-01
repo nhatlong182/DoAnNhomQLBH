@@ -187,6 +187,7 @@ namespace DoAnNhomQLBH
         {
             string tenNV = txtSearch.Text;
             buNV.search(dGNhanVien, tenNV);
+            txtSearch.Text = "";
         }
     }
 }

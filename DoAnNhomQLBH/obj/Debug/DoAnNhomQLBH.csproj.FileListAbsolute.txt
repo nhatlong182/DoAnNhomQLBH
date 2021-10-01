@@ -104,3 +104,6 @@ C:\Users\Admin\Desktop\bt_winform\DoAnNhomQLBH\DoAnNhomQLBH\obj\Debug\DoAnNhomQL
 C:\Users\Admin\Desktop\bt_winform\DoAnNhomQLBH\DoAnNhomQLBH\obj\Debug\DoAnNhomQLBH.FSanPham.resources
 C:\Users\Admin\Desktop\bt_winform\DoAnNhomQLBH\DoAnNhomQLBH\obj\Debug\DoAnNhomQLBH.Properties.Resources.resources
 C:\Users\Admin\Desktop\bt_winform\DoAnNhomQLBH\DoAnNhomQLBH\obj\Debug\DoAnNhomQLBH.csproj.GenerateResource.Cache
+C:\Users\Admin\Desktop\New folder\DoAnNhomQLBH\DoAnNhomQLBH\bin\Debug\stdole.dll
+C:\Users\Admin\Desktop\New folder\DoAnNhomQLBH\DoAnNhomQLBH\obj\Debug\DoAnNhomQLBH.FDangKy.resources
+C:\Users\Admin\Desktop\New folder\DoAnNhomQLBH\DoAnNhomQLBH\obj\Debug\DoAnNhomQLBH.FReport.resources

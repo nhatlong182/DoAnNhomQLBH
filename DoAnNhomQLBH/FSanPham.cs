@@ -126,7 +126,7 @@ namespace DoAnNhomQLBH
             s.MaLoaiSP = Int32.Parse(cbMaLSP.SelectedValue.ToString());
             s.HinhSP = txtHinh.Text;
 
-            File.Copy(duongDan, Path.Combine(@"..\..\images\",
+            File.Copy(duongDan, Path.Combine(@"../../images/",
                 Path.GetFileName(duongDan)), true);
 
             if (buSP.suaSanPham(s))
@@ -213,6 +213,7 @@ namespace DoAnNhomQLBH
         {
             string tenSP = txtSearch.Text;
             buSP.search(dGSP,tenSP);
+            txtSearch.Text = "";
         }
     }
 }
