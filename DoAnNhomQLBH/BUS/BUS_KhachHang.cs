@@ -26,8 +26,13 @@ namespace DoAnNhomQLBH.BUS
         public bool themKhachHang(KhachHang k)
         {
             try {
-                daKH.themKH(k);
-                return true;
+                if (daKH.themKH(k))
+                {
+                    return true;
+                }
+                else
+                    return false;
+
             } catch (Exception)
             {
                 return false;

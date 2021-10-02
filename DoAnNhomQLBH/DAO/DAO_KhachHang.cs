@@ -33,10 +33,19 @@ namespace DoAnNhomQLBH.DAO
             var ds = db.KhachHangs.Where(s => s.TenKH.Contains(tenKH)).ToList();
             return ds;
         }
-        public void themKH(KhachHang k)
+        public bool themKH(KhachHang k)
         {
-            db.KhachHangs.Add(k);
-            db.SaveChanges();
+            KhachHang mailKH = db.KhachHangs.Where(s => s.Email == k.Email).FirstOrDefault();
+            if (mailKH == null)
+            {
+                db.KhachHangs.Add(k);
+                db.SaveChanges();
+                return true;
+            }
+            else
+            {
+                return false;
+            }
         }
         public void xoaKH(int maKH)
         {
@@ -52,7 +61,6 @@ namespace DoAnNhomQLBH.DAO
             khachhang.GioiTinh = kh.GioiTinh;
             khachhang.DienThoai = kh.DienThoai;
             khachhang.Fax = kh.Fax;
-            khachhang.Email = kh.Email;
             khachhang.NgaySinh = kh.NgaySinh;
             db.SaveChanges();
         }

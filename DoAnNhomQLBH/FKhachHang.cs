@@ -141,7 +141,6 @@ namespace DoAnNhomQLBH
             kh.NgaySinh = dtpNgaySinh.Value;
             kh.DienThoai = txtSdt.Text;
             kh.DiaChi = txtDiaChi.Text;
-            kh.Email = txtEmail.Text;
             kh.Fax = txtFax.Text;
             if (buKH.suaKhachHang(kh))
             {
