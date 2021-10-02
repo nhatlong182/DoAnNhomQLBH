@@ -13,10 +13,19 @@ namespace DoAnNhomQLBH.DAO
         {
             db = new quanlybanhangEntities();
         }
-        public void dangKy(Nhanvien k)
+        public bool dangKy(Nhanvien k)
         {
-            db.Nhanviens.Add(k);
-            db.SaveChanges();
+            Nhanvien mailNV = db.Nhanviens.Where(s => s.Email == k.Email).FirstOrDefault();
+            if (mailNV == null)
+            {
+                db.Nhanviens.Add(k);
+                db.SaveChanges();
+                return true;
+            }
+            else
+            {
+                return false;
+            }
         }
     }
 }

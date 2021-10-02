@@ -59,7 +59,6 @@
             this.groupBox3 = new System.Windows.Forms.GroupBox();
             this.gVDH = new System.Windows.Forms.DataGridView();
             this.groupBox4 = new System.Windows.Forms.GroupBox();
-            this.btThemCTDH = new System.Windows.Forms.Button();
             this.btXoa = new System.Windows.Forms.Button();
             this.btSua = new System.Windows.Forms.Button();
             this.btDong = new System.Windows.Forms.Button();
@@ -144,9 +143,9 @@
             this.groupBox1.Controls.Add(this.diaChiLabel);
             this.groupBox1.Controls.Add(this.dienThoaiLabel);
             this.groupBox1.Location = new System.Drawing.Point(13, 135);
-            this.groupBox1.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.groupBox1.Margin = new System.Windows.Forms.Padding(4);
             this.groupBox1.Name = "groupBox1";
-            this.groupBox1.Padding = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.groupBox1.Padding = new System.Windows.Forms.Padding(4);
             this.groupBox1.Size = new System.Drawing.Size(1049, 222);
             this.groupBox1.TabIndex = 1;
             this.groupBox1.TabStop = false;
@@ -166,7 +165,7 @@
             // txtDiaChiGiao
             // 
             this.txtDiaChiGiao.Location = new System.Drawing.Point(685, 90);
-            this.txtDiaChiGiao.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.txtDiaChiGiao.Margin = new System.Windows.Forms.Padding(4);
             this.txtDiaChiGiao.Name = "txtDiaChiGiao";
             this.txtDiaChiGiao.Size = new System.Drawing.Size(265, 22);
             this.txtDiaChiGiao.TabIndex = 27;
@@ -174,7 +173,7 @@
             // txtGhiChu
             // 
             this.txtGhiChu.Location = new System.Drawing.Point(629, 135);
-            this.txtGhiChu.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.txtGhiChu.Margin = new System.Windows.Forms.Padding(4);
             this.txtGhiChu.Multiline = true;
             this.txtGhiChu.Name = "txtGhiChu";
             this.txtGhiChu.Size = new System.Drawing.Size(321, 54);
@@ -194,7 +193,7 @@
             // dtpNgayGiao
             // 
             this.dtpNgayGiao.Location = new System.Drawing.Point(684, 55);
-            this.dtpNgayGiao.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.dtpNgayGiao.Margin = new System.Windows.Forms.Padding(4);
             this.dtpNgayGiao.Name = "dtpNgayGiao";
             this.dtpNgayGiao.Size = new System.Drawing.Size(267, 22);
             this.dtpNgayGiao.TabIndex = 17;
@@ -231,7 +230,7 @@
             // dtpNgayDH
             // 
             this.dtpNgayDH.Location = new System.Drawing.Point(201, 174);
-            this.dtpNgayDH.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.dtpNgayDH.Margin = new System.Windows.Forms.Padding(4);
             this.dtpNgayDH.Name = "dtpNgayDH";
             this.dtpNgayDH.Size = new System.Drawing.Size(265, 22);
             this.dtpNgayDH.TabIndex = 13;
@@ -239,7 +238,7 @@
             // txtMaDH
             // 
             this.txtMaDH.Location = new System.Drawing.Point(201, 55);
-            this.txtMaDH.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.txtMaDH.Margin = new System.Windows.Forms.Padding(4);
             this.txtMaDH.Name = "txtMaDH";
             this.txtMaDH.Size = new System.Drawing.Size(265, 22);
             this.txtMaDH.TabIndex = 3;
@@ -335,9 +334,9 @@
             // 
             this.groupBox3.Controls.Add(this.gVDH);
             this.groupBox3.Location = new System.Drawing.Point(13, 348);
-            this.groupBox3.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.groupBox3.Margin = new System.Windows.Forms.Padding(4);
             this.groupBox3.Name = "groupBox3";
-            this.groupBox3.Padding = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.groupBox3.Padding = new System.Windows.Forms.Padding(4);
             this.groupBox3.Size = new System.Drawing.Size(1049, 271);
             this.groupBox3.TabIndex = 11;
             this.groupBox3.TabStop = false;
@@ -357,7 +356,6 @@
             // 
             // groupBox4
             // 
-            this.groupBox4.Controls.Add(this.btThemCTDH);
             this.groupBox4.Controls.Add(this.btXoa);
             this.groupBox4.Controls.Add(this.btSua);
             this.groupBox4.Controls.Add(this.btDong);
@@ -365,31 +363,20 @@
             this.groupBox4.Controls.Add(this.btThemDH);
             this.groupBox4.Dock = System.Windows.Forms.DockStyle.Bottom;
             this.groupBox4.Location = new System.Drawing.Point(0, 620);
-            this.groupBox4.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.groupBox4.Margin = new System.Windows.Forms.Padding(4);
             this.groupBox4.Name = "groupBox4";
-            this.groupBox4.Padding = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.groupBox4.Padding = new System.Windows.Forms.Padding(4);
             this.groupBox4.Size = new System.Drawing.Size(1075, 59);
             this.groupBox4.TabIndex = 16;
             this.groupBox4.TabStop = false;
             // 
-            // btThemCTDH
-            // 
-            this.btThemCTDH.ForeColor = System.Drawing.Color.Blue;
-            this.btThemCTDH.Location = new System.Drawing.Point(554, 18);
-            this.btThemCTDH.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
-            this.btThemCTDH.Name = "btThemCTDH";
-            this.btThemCTDH.Size = new System.Drawing.Size(128, 31);
-            this.btThemCTDH.TabIndex = 5;
-            this.btThemCTDH.Text = "Thêm CTDH";
-            this.btThemCTDH.UseVisualStyleBackColor = true;
-            // 
             // btXoa
             // 
             this.btXoa.ForeColor = System.Drawing.Color.Blue;
-            this.btXoa.Location = new System.Drawing.Point(379, 18);
+            this.btXoa.Location = new System.Drawing.Point(465, 18);
             this.btXoa.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.btXoa.Name = "btXoa";
-            this.btXoa.Size = new System.Drawing.Size(101, 31);
+            this.btXoa.Size = new System.Drawing.Size(143, 31);
             this.btXoa.TabIndex = 9;
             this.btXoa.Text = "Xóa";
             this.btXoa.UseVisualStyleBackColor = true;
@@ -398,10 +385,10 @@
             // btSua
             // 
             this.btSua.ForeColor = System.Drawing.Color.Blue;
-            this.btSua.Location = new System.Drawing.Point(204, 20);
+            this.btSua.Location = new System.Drawing.Point(242, 20);
             this.btSua.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.btSua.Name = "btSua";
-            this.btSua.Size = new System.Drawing.Size(101, 31);
+            this.btSua.Size = new System.Drawing.Size(150, 31);
             this.btSua.TabIndex = 8;
             this.btSua.Text = "Sửa";
             this.btSua.UseVisualStyleBackColor = true;
@@ -410,10 +397,10 @@
             // btDong
             // 
             this.btDong.ForeColor = System.Drawing.Color.Blue;
-            this.btDong.Location = new System.Drawing.Point(937, 18);
+            this.btDong.Location = new System.Drawing.Point(891, 18);
             this.btDong.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.btDong.Name = "btDong";
-            this.btDong.Size = new System.Drawing.Size(100, 31);
+            this.btDong.Size = new System.Drawing.Size(144, 31);
             this.btDong.TabIndex = 7;
             this.btDong.Text = "Đóng";
             this.btDong.UseVisualStyleBackColor = true;
@@ -422,10 +409,10 @@
             // btLuu
             // 
             this.btLuu.ForeColor = System.Drawing.Color.Blue;
-            this.btLuu.Location = new System.Drawing.Point(756, 18);
+            this.btLuu.Location = new System.Drawing.Point(681, 18);
             this.btLuu.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.btLuu.Name = "btLuu";
-            this.btLuu.Size = new System.Drawing.Size(107, 31);
+            this.btLuu.Size = new System.Drawing.Size(137, 31);
             this.btLuu.TabIndex = 4;
             this.btLuu.Text = "Load";
             this.btLuu.UseVisualStyleBackColor = true;
@@ -436,7 +423,7 @@
             this.btThemDH.Location = new System.Drawing.Point(25, 18);
             this.btThemDH.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.btThemDH.Name = "btThemDH";
-            this.btThemDH.Size = new System.Drawing.Size(105, 31);
+            this.btThemDH.Size = new System.Drawing.Size(144, 31);
             this.btThemDH.TabIndex = 3;
             this.btThemDH.Text = "Thêm";
             this.btThemDH.UseVisualStyleBackColor = true;
@@ -451,7 +438,7 @@
             this.Controls.Add(this.groupBox3);
             this.Controls.Add(this.groupBox1);
             this.Controls.Add(this.label1);
-            this.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.Margin = new System.Windows.Forms.Padding(4);
             this.Name = "FDonHang";
             this.Text = "FOrderDetails";
             this.Load += new System.EventHandler(this.FDonHang_Load);
@@ -492,7 +479,6 @@
         private System.Windows.Forms.ComboBox comboBoxNV;
         private System.Windows.Forms.ComboBox comboBoxKH;
         private System.Windows.Forms.GroupBox groupBox4;
-        private System.Windows.Forms.Button btThemCTDH;
         private System.Windows.Forms.Button btXoa;
         private System.Windows.Forms.Button btSua;
         private System.Windows.Forms.Button btDong;

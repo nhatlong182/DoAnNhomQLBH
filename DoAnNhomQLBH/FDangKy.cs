@@ -41,7 +41,9 @@ namespace DoAnNhomQLBH
             nv.Email = txtEmail.Text;
             nv.Password = txtPw.Text;
             nv.Admin = false;
-            if (buDK.themNhanVien(nv))
+            if (buDK.isEmail(txtEmail.Text) == true)
+            {
+                if (buDK.themNhanVien(nv))
             {
                 if (string.IsNullOrWhiteSpace(txtTen.Text))
                 {
@@ -79,7 +81,11 @@ namespace DoAnNhomQLBH
             {
                 MessageBox.Show("Tạo tài khoản thất bại !");
             }
-        }
+        }else
+            {
+                MessageBox.Show("Email không hợp lệ !");
+            }
+}
         public void clear()
         {
             txtTen.Clear();

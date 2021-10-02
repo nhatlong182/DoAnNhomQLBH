@@ -71,9 +71,9 @@ namespace DoAnNhomQLBH
             s.DonGia = Int32.Parse(txtDonGia.Text);
             s.SoLuong = Int32.Parse(txtSoLuong.Text);
             s.MaLoaiSP = Int32.Parse(cbMaLSP.SelectedValue.ToString());
-            
 
-            if(!string.IsNullOrEmpty(duongDan))
+
+            if (openFileDialog1.Container != null)
             {
                 File.Copy(duongDan, Path.Combine(@"../../images/", Path.GetFileName(duongDan)), true);
                 s.HinhSP = txtHinh.Text;

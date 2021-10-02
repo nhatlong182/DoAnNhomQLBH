@@ -129,6 +129,18 @@ namespace DoAnNhomQLBH
         private void btXoa_Click(object sender, EventArgs e)
         {
             dGSP.DataSource = null;
+            // hien thi tren datagridview productid , unitprice , quantity ,discount
+            dtDonHang = new DataTable();
+            dtDonHang.Columns.Add("MaSP");
+            dtDonHang.Columns.Add("DonGia");
+            dtDonHang.Columns.Add("SoLuong");
+            dtDonHang.Columns.Add("MaGiamGia");
+            dGSP.DataSource = dtDonHang;
+            // Dinh Dang 4 cot cho view 
+            dGSP.Columns[0].Width = (int)(0.2 * dGSP.Width);
+            dGSP.Columns[1].Width = (int)(0.2 * dGSP.Width);
+            dGSP.Columns[2].Width = (int)(0.25 * dGSP.Width);
+            dGSP.Columns[3].Width = (int)(0.25 * dGSP.Width);
         }
     }
 }

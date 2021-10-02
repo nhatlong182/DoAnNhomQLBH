@@ -35,12 +35,10 @@
             this.groupBox1 = new System.Windows.Forms.GroupBox();
             this.txtSoLuong = new System.Windows.Forms.TextBox();
             this.label5 = new System.Windows.Forms.Label();
-            this.cbGiamGia = new System.Windows.Forms.ComboBox();
             this.pictureBox1 = new System.Windows.Forms.PictureBox();
             this.btHinh = new System.Windows.Forms.Button();
             this.txtHinh = new System.Windows.Forms.TextBox();
             this.cbMaLSP = new System.Windows.Forms.ComboBox();
-            this.label3 = new System.Windows.Forms.Label();
             this.label4 = new System.Windows.Forms.Label();
             this.txtDonGia = new System.Windows.Forms.TextBox();
             this.label2 = new System.Windows.Forms.Label();
@@ -125,12 +123,10 @@
             // 
             this.groupBox1.Controls.Add(this.txtSoLuong);
             this.groupBox1.Controls.Add(this.label5);
-            this.groupBox1.Controls.Add(this.cbGiamGia);
             this.groupBox1.Controls.Add(this.pictureBox1);
             this.groupBox1.Controls.Add(this.btHinh);
             this.groupBox1.Controls.Add(this.txtHinh);
             this.groupBox1.Controls.Add(this.cbMaLSP);
-            this.groupBox1.Controls.Add(this.label3);
             this.groupBox1.Controls.Add(this.label4);
             this.groupBox1.Controls.Add(this.txtDonGia);
             this.groupBox1.Controls.Add(this.label2);
@@ -140,9 +136,9 @@
             this.groupBox1.Controls.Add(this.ngaySinhLabel);
             this.groupBox1.Controls.Add(this.dienThoaiLabel);
             this.groupBox1.Location = new System.Drawing.Point(13, 98);
-            this.groupBox1.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.groupBox1.Margin = new System.Windows.Forms.Padding(4);
             this.groupBox1.Name = "groupBox1";
-            this.groupBox1.Padding = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.groupBox1.Padding = new System.Windows.Forms.Padding(4);
             this.groupBox1.Size = new System.Drawing.Size(977, 212);
             this.groupBox1.TabIndex = 1;
             this.groupBox1.TabStop = false;
@@ -151,7 +147,7 @@
             // txtSoLuong
             // 
             this.txtSoLuong.Location = new System.Drawing.Point(156, 135);
-            this.txtSoLuong.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.txtSoLuong.Margin = new System.Windows.Forms.Padding(4);
             this.txtSoLuong.Name = "txtSoLuong";
             this.txtSoLuong.Size = new System.Drawing.Size(265, 22);
             this.txtSoLuong.TabIndex = 28;
@@ -166,15 +162,6 @@
             this.label5.Size = new System.Drawing.Size(68, 17);
             this.label5.TabIndex = 27;
             this.label5.Text = "Số lượng:";
-            // 
-            // cbGiamGia
-            // 
-            this.cbGiamGia.FormattingEnabled = true;
-            this.cbGiamGia.Location = new System.Drawing.Point(507, 103);
-            this.cbGiamGia.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
-            this.cbGiamGia.Name = "cbGiamGia";
-            this.cbGiamGia.Size = new System.Drawing.Size(145, 24);
-            this.cbGiamGia.TabIndex = 26;
             // 
             // pictureBox1
             // 
@@ -201,7 +188,7 @@
             // txtHinh
             // 
             this.txtHinh.Location = new System.Drawing.Point(507, 34);
-            this.txtHinh.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.txtHinh.Margin = new System.Windows.Forms.Padding(4);
             this.txtHinh.Multiline = true;
             this.txtHinh.Name = "txtHinh";
             this.txtHinh.Size = new System.Drawing.Size(145, 52);
@@ -215,17 +202,6 @@
             this.cbMaLSP.Name = "cbMaLSP";
             this.cbMaLSP.Size = new System.Drawing.Size(265, 24);
             this.cbMaLSP.TabIndex = 21;
-            // 
-            // label3
-            // 
-            this.label3.AutoSize = true;
-            this.label3.ForeColor = System.Drawing.Color.Blue;
-            this.label3.Location = new System.Drawing.Point(437, 107);
-            this.label3.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
-            this.label3.Name = "label3";
-            this.label3.Size = new System.Drawing.Size(68, 17);
-            this.label3.TabIndex = 19;
-            this.label3.Text = "Giảm giá:";
             // 
             // label4
             // 
@@ -241,7 +217,7 @@
             // txtDonGia
             // 
             this.txtDonGia.Location = new System.Drawing.Point(156, 102);
-            this.txtDonGia.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.txtDonGia.Margin = new System.Windows.Forms.Padding(4);
             this.txtDonGia.Name = "txtDonGia";
             this.txtDonGia.Size = new System.Drawing.Size(265, 22);
             this.txtDonGia.TabIndex = 12;
@@ -260,7 +236,7 @@
             // txtTenSP
             // 
             this.txtTenSP.Location = new System.Drawing.Point(156, 64);
-            this.txtTenSP.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.txtTenSP.Margin = new System.Windows.Forms.Padding(4);
             this.txtTenSP.Name = "txtTenSP";
             this.txtTenSP.Size = new System.Drawing.Size(265, 22);
             this.txtTenSP.TabIndex = 10;
@@ -269,7 +245,7 @@
             // 
             this.txtMaSP.Enabled = false;
             this.txtMaSP.Location = new System.Drawing.Point(156, 32);
-            this.txtMaSP.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.txtMaSP.Margin = new System.Windows.Forms.Padding(4);
             this.txtMaSP.Name = "txtMaSP";
             this.txtMaSP.Size = new System.Drawing.Size(265, 22);
             this.txtMaSP.TabIndex = 3;
@@ -364,9 +340,9 @@
             this.groupBox2.Controls.Add(this.btThem);
             this.groupBox2.Dock = System.Windows.Forms.DockStyle.Bottom;
             this.groupBox2.Location = new System.Drawing.Point(0, 592);
-            this.groupBox2.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.groupBox2.Margin = new System.Windows.Forms.Padding(4);
             this.groupBox2.Name = "groupBox2";
-            this.groupBox2.Padding = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.groupBox2.Padding = new System.Windows.Forms.Padding(4);
             this.groupBox2.Size = new System.Drawing.Size(1019, 59);
             this.groupBox2.TabIndex = 10;
             this.groupBox2.TabStop = false;
@@ -456,9 +432,9 @@
             // 
             this.groupBox3.Controls.Add(this.dGSP);
             this.groupBox3.Location = new System.Drawing.Point(13, 306);
-            this.groupBox3.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.groupBox3.Margin = new System.Windows.Forms.Padding(4);
             this.groupBox3.Name = "groupBox3";
-            this.groupBox3.Padding = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.groupBox3.Padding = new System.Windows.Forms.Padding(4);
             this.groupBox3.Size = new System.Drawing.Size(977, 295);
             this.groupBox3.TabIndex = 11;
             this.groupBox3.TabStop = false;
@@ -487,7 +463,7 @@
             this.Controls.Add(this.groupBox2);
             this.Controls.Add(this.groupBox1);
             this.Controls.Add(this.label1);
-            this.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.Margin = new System.Windows.Forms.Padding(4);
             this.Name = "FSanPham";
             this.Text = "Form Sản phẩm";
             this.Load += new System.EventHandler(this.FSanPham_Load);
@@ -535,13 +511,11 @@
         private System.Windows.Forms.Button btDong;
         private System.Windows.Forms.Button btReport;
         private System.Windows.Forms.Button btThem;
-        private System.Windows.Forms.Label label3;
         private System.Windows.Forms.Label label4;
         private System.Windows.Forms.TextBox txtHinh;
         private System.Windows.Forms.ComboBox cbMaLSP;
         private System.Windows.Forms.PictureBox pictureBox1;
         private System.Windows.Forms.Button btHinh;
-        private System.Windows.Forms.ComboBox cbGiamGia;
         private System.Windows.Forms.TextBox txtSoLuong;
         private System.Windows.Forms.Label label5;
         private System.Windows.Forms.TextBox txtSearch;

@@ -25,6 +25,7 @@ namespace DoAnNhomQLBH
         public string HoTenNV { get; set; }
         public string Diachi { get; set; }
         public string Dienthoai { get; set; }
+        //[EmailAddress(ErrorMessage = "Email không hợp lệ")]
         public string Email { get; set; }
         public string Password { get; set; }
         public bool Admin { get; set; }
